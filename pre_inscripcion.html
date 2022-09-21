@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pre inscrpción</title>
+    <link rel="icon" href="/imagenes/bigben.ico">
+</head>
+<body>
+    <form method="post" action="informacion.php">
+        <h1>Registro</h1>
+        <label for="nombre">Nombre y Apellido</label>
+        <input type="text" name="nombre" id="name"
+        placeholder="Nombre"> <br> <br>
+        
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email"
+        placeholder="Correo electrónico"><br> <br> 
+        <label for="telefono">Telefono</label>
+        <input type="text" name="telefono" id="telefono"
+        placeholder="Teléfono"> <br> <br>
+    <fieldset>
+        <legend>Que idioma quieres aprender</legend>
+        
+        <label for="idioma">Ingles</label>
+        <input type="checkbox" id="ingles" name="idioma"> <br>
+        <label for="idioma">Francés</label>
+        <input type="checkbox" id="frances" name="idioma"> <br>
+        <label for="idioma">Alemán</label>
+        <input type="checkbox" id="aleman" name="idioma"> <br>
+        <label for="idioma">Español</label>
+        <input type="checkbox" id="español" name="idioma"> <br>
+        <label for="nombre">Otro</label> 
+        <input type="text" name="idioma" id="otro"><br> 
+    </fieldset>
+        <p>Nivel Actual</p>
+        <fieldset>
+        <input type="radio" id="bajo" value="bajo" name="ingles">
+        <label for="bajo">Bajo</label> <br>
+        <input type="radio" id="medio" value="medio" name="ingles">
+        <label for="medio">Medio</label> <br>
+        <input type="radio" id="alto" value="alto" name="ingles">
+        <label for="alto">Alto</label> <br> <br>
+    </fieldset> <br>
+    <p>Modalidad</p>
+    <input type="radio" id="Presencial" value="presencial" name="modalidad">
+    <label for="presencial">Presencial</label>
+    <input type="radio" id="On Line" value="online" name="modalidad">
+    <label for="online">On Line</label>
+
+    <p>Provincia donde vives</p>
+    <select id="provincia">
+        <option value="buenosaires">Buenos Aires</option>
+        <option value="cordoba">Córdoba</option>
+        <option value="santafe">Santa Fé</option>
+        <option value="sanluis">San Luis</option>
+        <option value="mendoza">Mendoza</option>
+        <option value="otro">Otro</option>
+    </select>
+        <input type="submit"> 
+        
+    </form>  <br>
+    <a href="index.html">Volver</a>
+</body>
+</html>
