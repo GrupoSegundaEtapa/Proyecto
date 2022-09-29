@@ -5,4 +5,6 @@ _ Se insertan las ISSUES del proyecto
 _escritura wiki
 _incorporacion rama DOCUMENTACION
 
+_Renombrado rama, y agregado 1er propuesta calendario
+
 
