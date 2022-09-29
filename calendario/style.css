@@ -1,0 +1,24 @@
+body{
+      margin-top: 5%;
+      padding: auto;
+      text-align: center;
+}
+.table-table-bordered-table-responsive{
+      margin-right: 20%;
+}
+.calendario{
+      margin-top: 10%;
+      padding-right: 10%;
+}
+td, tr{
+      margin-top: 10%;
+      padding-top: 10%;
+}
+li{
+      list-style: none;
+}
+.mes{
+      text-align:center;
+      margin-top: 3%;
+      padding-top: 2%;
+}
