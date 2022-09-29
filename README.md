@@ -1,3 +1,4 @@
+#1° calendario piloto para aula alumnos y/o profesores
 #Borro la propuesta
 Se da de baja a la propuesta inicial de index
 
