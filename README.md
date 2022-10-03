@@ -8,10 +8,12 @@
 * Escritura wiki
 * Incorporacion rama DOCUMENTACION
 
-### Renombrado rama, y agregado 1er propuesta calendario
+
+## Renombrado rama, y agregado 1er propuesta calendario
 
 ### 03/10 Termina primer Sprin 
-  * Actualizada lista de encuentros en Wiki con enlace del Drive
+* Entrega PDF de IEEE-830, rama Documentacion
+* Actualizada lista de encuentros en Wiki con enlace del Drive
  
 
 
