@@ -9,7 +9,7 @@
 * Incorporacion rama DOCUMENTACION
 
 
-## Renombrado rama, y agregado 1er propuesta calendario
+#### Renombrado rama, y agregado 1er propuesta calendario
 
 ### 03/10 Termina primer Sprin 
 * Entrega PDF de IEEE-830, rama Documentacion
