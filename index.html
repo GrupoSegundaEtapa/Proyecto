@@ -2,72 +2,141 @@
 <html>
 
 <head>
-<title>Academia </title>
-<link rel="stylesheet" href="/assets/css/index.css">
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+      <title>Academia </title>
+      <link rel="stylesheet" href="/assets/css/index.css">
+      <script src="https://kit.fontawesome.com/eb3caab6e7.js" crossorigin="anonymous"></script>
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
 
 </head>
 
 <body>
-  <header>
+      <header>
+            <nav class="navbar navbar-expand-lg bg-light">
+                  <div class="container-fluid">
+                        <img src="/assets/img/logotransparente.png" href="index.html" alt="Logo">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                              data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown"
+                              aria-expanded="false" aria-label="Toggle navigation">
+                              <span class="navbar-toggler-icon"></span>
+                        </button>
 
-    <nav class="navbar navbar-expand-lg bg-light">
-        <div class="container-fluid">
-            <img src="https://drive.google.com/file/d/1_Wa2CzD3BI-ZfMHEySb39JRkc_ZCLnRJ/view?usp=sharing" href="index.html" alt="Logo">
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="prueba2.html">Home</a>
-              </li>
-              
-              <li class="nav-item">
-                <a class="nav-link" href="#">Contactanos</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Cursos
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Duración</a></li>
-                  <li><a class="dropdown-item" href="#">Niveles</a></li>
-                  <li><a class="dropdown-item" href="#">Modalidad</a></li>
-                </ul>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-    </header>
-     
-     <section>
-      <div class="container"> 
-        <div class="row">
-            <div class="col-6">
-                <h1>Inscripciones Abiertas 2023!!</h1>
-                <p>Estás a tiempo de inscribirte a los Cursos del Ciclo 2023! Nuestros cursos se adaptan siempre a tus necesidades: podés inscribirte a la totalidad del curso o sólo a la parte que necesites reforzar y más dificultades te da.</p>
-                <a href="form.html" class="btn btn-info">REGISTRARSE</a>
+                        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                    <li class="nav-item">
+                                          <a class="nav-link active" aria-current="page" href="prueba2.html">Home</a>
+                                    </li>
+                                    <li class="nav-item">
+                                          <a class="nav-link" href="#">Contactanos</a>
+                                    </li>
+                                    <li class="nav-item dropdown">
+                                          <a class="nav-link dropdown-toggle" href="#" role="button"
+                                                data-bs-toggle="dropdown" aria-expanded="false">
+                                                Niveles
+                                          </a>
+                                          <ul class="dropdown-menu">
+                                                <li><a class="dropdown-item" href="#">Basico</a></li>
+                                                <li><a class="dropdown-item" href="#">Intermedio</a></li>
+                                                <li><a class="dropdown-item" href="#">Avanzado</a></li>
+                                          </ul>
+                                    </li>
+                              </ul>
+                              <form class="d-flex">
+                                    <input class="form-control me-2" type="search" placeholder="Search"
+                                          aria-label="Search">
+                                    <button class="btn btn-outline-success" type="submit"><i
+                                                class="fa-solid fa-magnifying-glass"></i></button>
+                              </form>
+                              <button class="btn btn-outline-success me-2" type="button">Acceso Campus</button>
+                        </div>
+                  </div>
+            </nav>
+      </header>
+
+      <section>
+            <div class="container">
+                  <div class="row">
+                        <div class="col-6">
+                              <h1>Inscripciones Abiertas 2023!!</h1>
+                              <p>Estás a tiempo de inscribirte a los Cursos del Ciclo 2023! Nuestros cursos se adaptan
+                                    siempre a tus necesidades: podés inscribirte a la totalidad del curso o sólo a la
+                                    parte que necesites reforzar y más dificultades te da.</p>
+                              <a href="form.html" class="btn btn-info">REGISTRARSE</a>
+                        </div>
+                        <div class="col-6">
+                              <!--carrucel inscripcion-->
+                              <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                                    <div class="carousel-indicators">
+                                          <button type="button" data-bs-target="#carouselExampleCaptions"
+                                                data-bs-slide-to="0" class="active" aria-current="true"
+                                                aria-label="Slide 1"></button>
+                                          <button type="button" data-bs-target="#carouselExampleCaptions"
+                                                data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                          <button type="button" data-bs-target="#carouselExampleCaptions"
+                                                data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                    </div>
+                                    <div class="carousel-inner">
+                                          <div class="carousel-item active">
+                                                <img src="/assets/img/2carrucel.png" class="d-block w-100"
+                                                      alt="ingles academia">
+                                                <div class="carousel-caption d-none d-md-block">
+                                                      <h5>First slide label</h5>
+                                                      <p>Some representative placeholder content for the first slide.
+                                                      </p>
+                                                </div>
+                                          </div>
+                                          <div class="carousel-item">
+                                                <img src="/assets/img/4carrucel.png" class="d-block w-100"
+                                                      alt="ingles academia">
+                                                <div class="carousel-caption d-none d-md-block">
+                                                      <h5>Second slide label</h5>
+                                                      <p>Some representative placeholder content for the second slide.
+                                                      </p>
+                                                </div>
+                                          </div>
+                                          <div class="carousel-item">
+                                                <img src="/assets/img/5carrucel.png" class="d-block w-100"
+                                                      alt="ingles academia">
+                                                <div class="carousel-caption d-none d-md-block">
+                                                      <h5>Third slide label</h5>
+                                                      <p>Some representative placeholder content for the third slide.
+                                                      </p>
+                                                </div>
+                                          </div>
+                                    </div>
+                                    <button class="carousel-control-prev" type="button"
+                                          data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                          <span class="visually-hidden">Previous</span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button"
+                                          data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                          <span class="visually-hidden">Next</span>
+                                    </button>
+                              </div>
+                        </div>
+                  </div>
             </div>
-            <div class="col-6">
-                <img src="https://cdn.pixabay.com/photo/2015/07/17/22/43/student-849825_960_720.jpg" alt="imgInicio" width="95%">
-           <br><br>  </div>
-        </div>
-        <div>
-          <section>
-            <h3>Animate a dar el paso que te acerque a alcanzar tus sueños, a esa meta profesional deseada o ese viaje tan esperado.</h3>
-          </section>
-        </div>
-        
-    </section> 
-    <div style="text-align: center ;">    
-  <h5>QUIENES SOMOS</h5>
-  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure mollitia est ratione tenetur? Nemo eveniet dignissimos, quia voluptates distinctio a rem veniam vero suscipit nisi at provident, ab similique. Quis!</p>
-    </div>
+      </section>
+      <section>
+            <h3>Animate a dar el paso que te acerque a alcanzar tus sueños, a esa meta profesional
+                  deseada o ese viaje tan esperado.</h3>
+      </section>
+      <div>
+            <h5>QUIENES SOMOS</h5>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure mollitia est ratione tenetur? Nemo eveniet
+                  dignissimos, quia voluptates distinctio a rem veniam vero suscipit nisi at provident, ab similique.
+                  Quis!
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis perferendis assumenda, consequatur,
+                  molestiae nisi veritatis eum dolores velit natus placeat pariatur totam quis aperiam. Optio,
+                  blanditiis deserunt! Sapiente, ab! Ducimus. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Fugit laudantium quam est, eos obcaecati pariatur dignissimos alias consectetur dolor deserunt quis
+                  sint assumenda facere itaque, quae possimus quo qui reprehenderit.</p>
+      </div>
 
  <br> <br>
- <div class="container" > <br> <br>
+<div class="container" > <br> <br>
   <div class="card">
     <figure>
         <img src="/assets/img/img1.jpg">
@@ -108,7 +177,7 @@
         
             </div>
     
- </div>
+  </div>
 
  <div class="container" > <br> <br>
   <div class="card">
@@ -156,27 +225,28 @@
 
 
 
-</div>
+      </div>
 
 </body>
 
 
 <footer class="footer">
-  <ul>
-      <li>DIRECCIÓN:</li>
-      <p>Mariano Moreno 750 Alberdi </p>
-      <li>TELÉFONO</li>
-      <p>(0351) 4527030</p>
-      <li>CORREO ELECTRÓNICO</li>
-      <p>academy@gmail.com.ar</p>
-      <li>SEGUINOS EN NUETRAS REDES <i class="fa-brands fa-instagram"></i> <i class="fa-brands fa-linkedin"></i></li>
-      <p>Instagram</p>
-      <p>Facebook</p>
-      <p>Twitter</p>
-  </ul>
-  <small><i class="footerTexto"></i>
-        Academia de Inglés.
-  </small>
+      <ul>
+            <li>DIRECCIÓN:</li>
+            <p>Mariano Moreno 750 Alberdi </p>
+            <li>TELÉFONO</li>
+            <p>(0351) 4527030</p>
+            <li>CORREO ELECTRÓNICO</li>
+            <p>academy@gmail.com.ar</p>
+            <li>SEGUINOS EN NUETRAS REDES <i class="fa-brands fa-instagram"></i> <i class="fa-brands fa-linkedin"></i>
+            </li>
+            <p>Instagram</p>
+            <p>Facebook</p>
+            <p>Twitter</p>
+      </ul>
+      <small><i class="footerTexto"></i>
+            Academia de Inglés.
+      </small>
 
 </footer>
 
