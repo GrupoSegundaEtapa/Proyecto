@@ -1,0 +1,100 @@
+:root{
+      --primary: #a9dfa8;
+      --secondary: #f69197;
+      --light: #ececb8;
+      --dark:  #815019;
+      --diabled:  #f6e6d7;
+}
+
+body{
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      margin: auto;
+      height: 100vh;
+      background-color: var(--diabled);
+}
+*:first-letter{
+      text-transform: capitalize;
+}
+
+.rouderBoder{
+      border-radius: 5px;
+}
+
+.list{
+      margin: 25px auto;
+      padding: 25px;
+      background-color: var(--light);
+      width: 100%;
+      max-width: 350px;
+}
+.date{
+      display: flexbox;
+      align-items: center;
+      justify-content: space-between;
+}
+.dateRight{
+      display:flex;
+      align-items: center;
+}
+#dateNumber{
+      font-size: 50px;
+       font-weight: bold;
+}
+#dateText{
+      letter-spacing: 3px;
+      text-transform: uppercase; /*dias en mayuscula*/
+}
+#dateMonth, #dateText {
+      font-weight: bold;
+}
+#dateMonth, #dateYear{
+      margin-left: 7px;
+      font-size: 20px;
+}
+form{
+      margin: 20px 0;
+      display: grid;
+      grid-auto-flow: column;
+      grid-template-columns: auto 35px auto;
+      grid-column-gap: 15px;
+}
+input{
+      border:none;
+      padding-left: 10px;
+      background-color: var(--diabled);
+}
+input:focus{
+      outline: none;
+}
+
+.orderButton{
+      border: none;
+      border-radius: 10px;
+      font-weight: bold;
+      cursor: pointer;
+      background-color: var(--secondary);
+      color: aliceblue;
+   
+}
+.addTaskButton{
+      border: none;
+      font-weight: bold;
+      cursor: pointer;
+      height: 35px;
+      border-radius: 50%;
+      font-size: 18px;
+      background-color: var(--diabled);
+}
+.task{
+      background-color: var(--primary);
+      padding: 15px;
+      margin-top: 15px;
+      color:white;
+      cursor: pointer;
+      border-radius: 10px;
+}
+.done{
+      background-color: var(--diabled);
+      text-decoration: line-through;
+      color: var(--dark);
+}
