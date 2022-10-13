@@ -1,33 +1,37 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-      <title>Academia </title>
-      <link rel="stylesheet" href="/assets/css/index.css">
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+      <link rel="stylesheet" href="/assets/css/stylesheet.css">
+      <!--iconos-->
       <script src="https://kit.fontawesome.com/eb3caab6e7.js" crossorigin="anonymous"></script>
+      <!--css  pag de BOOSTRAP -->
       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
             integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-
+      <!-- JavaScript  pag de BOOSTRAP -->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+            crossorigin="anonymous"></script>
+      <!--fontnav-->
+      <link href="https://fonts.googleapis.com/css2?family=Alkalami&family=Bungee+Spice&family=Prata&family=Share+Tech+Mono&display=swap"
+            rel="stylesheet">
+      <title>Academia </title>
 </head>
 
 <body>
       <header>
-            <nav class="navbar navbar-expand-lg bg-light">
+            <nav class="navbar navbar-expand-lg">
                   <div class="container-fluid">
-                        <img src="/assets/img/logotransparente.png" href="index.html" alt="Logo">
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                              data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown"
-                              aria-expanded="false" aria-label="Toggle navigation">
-                              <span class="navbar-toggler-icon"></span>
-                        </button>
-
+                        <img src="/assets/img/logotransparente.png" href="/index.html" alt="Logo">
                         <div class="collapse navbar-collapse" id="navbarNavDropdown">
                               <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                                     <li class="nav-item">
-                                          <a class="nav-link active" aria-current="page" href="prueba2.html">Home</a>
-                                    </li>
-                                    <li class="nav-item">
-                                          <a class="nav-link" href="#">Contactanos</a>
+                                          <a class="nav-link active" aria-current="page" href="/index.html">Quienes
+                                                Somos</a>
                                     </li>
                                     <li class="nav-item dropdown">
                                           <a class="nav-link dropdown-toggle" href="#" role="button"
@@ -40,30 +44,33 @@
                                                 <li><a class="dropdown-item" href="#">Avanzado</a></li>
                                           </ul>
                                     </li>
+                                    <li class="nav-item">
+                                          <a class="nav-link" href="#">Contactanos</a>
+                                    </li>
                               </ul>
                               <form class="d-flex">
-                                    <input class="form-control me-2" type="search" placeholder="Search"
+                                    <input class="form-control me-2" type="search" placeholder="Buscar"
                                           aria-label="Search">
-                                    <button class="btn btn-outline-success" type="submit"><i
+                                    <button class="btn btn nav" type="submit"><i
                                                 class="fa-solid fa-magnifying-glass"></i></button>
                               </form>
-                              <button class="btn btn-outline-success me-2" type="button">Acceso Campus</button>
+                              <button class="btn btn nav" type="button">Acceso<br> Campus</button>
                         </div>
                   </div>
             </nav>
       </header>
 
-      <section>
-            <div class="container">
+      <section class="inicio">
+            <div class="container text-center">
                   <div class="row">
-                        <div class="col-6">
+                        <div class="col-md-6 col-sm-4">
                               <h1>Inscripciones Abiertas 2023!!</h1>
                               <p>Estás a tiempo de inscribirte a los Cursos del Ciclo 2023! Nuestros cursos se adaptan
                                     siempre a tus necesidades: podés inscribirte a la totalidad del curso o sólo a la
                                     parte que necesites reforzar y más dificultades te da.</p>
-                              <a href="/assets/form.html" class="btn btn-info">REGISTRARSE</a>
+                              <a href="/assets/form.html" class="button registro">REGISTRARSE</a>
                         </div>
-                        <div class="col-6">
+                        <div class="col-md-6 col-sm-4">
                               <!--carrucel inscripcion-->
                               <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
                                     <div class="carousel-indicators">
@@ -80,8 +87,9 @@
                                                 <img src="/assets/img/2carrucel.png" class="d-block w-100"
                                                       alt="ingles academia">
                                                 <div class="carousel-caption d-none d-md-block">
-                                                      <h5>First slide label</h5>
-                                                      <p>Some representative placeholder content for the first slide.
+                                                      <h5>Aprende inglés más rápido y más fácil este 2023</h5>
+                                                      <p>Clases en directo ILIMITADAS
+                                                            las 24 horas del día
                                                       </p>
                                                 </div>
                                           </div>
@@ -89,8 +97,9 @@
                                                 <img src="/assets/img/4carrucel.png" class="d-block w-100"
                                                       alt="ingles academia">
                                                 <div class="carousel-caption d-none d-md-block">
-                                                      <h5>Second slide label</h5>
-                                                      <p>Some representative placeholder content for the second slide.
+                                                      <h5>¿Por qué nuestro curso?</h5>
+                                                      <p>Tiene herramienta que
+                                                            perfecciona tu pronunciación
                                                       </p>
                                                 </div>
                                           </div>
@@ -98,8 +107,9 @@
                                                 <img src="/assets/img/5carrucel.png" class="d-block w-100"
                                                       alt="ingles academia">
                                                 <div class="carousel-caption d-none d-md-block">
-                                                      <h5>Third slide label</h5>
-                                                      <p>Some representative placeholder content for the third slide.
+                                                      <h5>Seguimiento a tu progreso</h5>
+                                                      <p>Te acompañamos de manera personalizada a través de WhatsApp,
+                                                            para estar conectados contigo durante tu proceso.
                                                       </p>
                                                 </div>
                                           </div>
@@ -117,110 +127,129 @@
                               </div>
                         </div>
                   </div>
+                  <div class="row container-sm">
+                        <h3>Animate a dar el paso que te acerque a alcanzar tus sueños, a esa meta profesional
+                              deseada o ese viaje tan esperado.</h3>
+                  </div>
             </div>
       </section>
-      <section>
-            <h3>Animate a dar el paso que te acerque a alcanzar tus sueños, a esa meta profesional
-                  deseada o ese viaje tan esperado.</h3>
+      <!-- QUIENES SOMOS-->
+      <section class="quienes">
+            <div class="row container text-center">
+                  <center>
+                        <h5>QUIENES SOMOS</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure mollitia est ratione tenetur?
+                              Nemo
+                              eveniet
+                              dignissimos, quia voluptates distinctio a rem veniam vero suscipit nisi at provident, ab
+                              similique.
+                              Quis!
+                              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis perferendis assumenda,
+                              consequatur,
+                              molestiae nisi veritatis eum dolores velit natus placeat pariatur totam quis aperiam.
+                              Optio,
+                              blanditiis deserunt! Sapiente, ab! Ducimus. Lorem ipsum dolor sit amet consectetur
+                              adipisicing
+                              elit.
+                              Fugit laudantium quam est, eos obcaecati pariatur dignissimos alias consectetur dolor
+                              deserunt
+                              quis
+                              sint assumenda facere itaque, quae possimus quo qui reprehenderit.
+                        </p>
+                  </center>
+            </div>
+
       </section>
-      <div>
-            <h5>QUIENES SOMOS</h5>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure mollitia est ratione tenetur? Nemo eveniet
-                  dignissimos, quia voluptates distinctio a rem veniam vero suscipit nisi at provident, ab similique.
-                  Quis!
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis perferendis assumenda, consequatur,
-                  molestiae nisi veritatis eum dolores velit natus placeat pariatur totam quis aperiam. Optio,
-                  blanditiis deserunt! Sapiente, ab! Ducimus. Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Fugit laudantium quam est, eos obcaecati pariatur dignissimos alias consectetur dolor deserunt quis
-                  sint assumenda facere itaque, quae possimus quo qui reprehenderit.</p>
+
+      <div class="container">
+            <div class="row">
+                  <div class="col-md-4 col-sm-3">
+                        <div class="card">
+                              <img src="/assets/img/img1.jpg">
+                              <div class="contenido">
+                                    <h3>Nivelación</h3>
+                                    <p>Acceso a un test de equivalencia para que arranques con tu aprendizaje desde
+                                          donde lo
+                                          necesites. </p>
+                                    <a href="#">Leer mas! </a>
+                              </div>
+                        </div>
+                  </div>
+                  <div class="col-md-4 col-sm-3">
+                        <div class="card">
+                              <img src="/assets/img/img2.jpg">
+                              <div class="contenido">
+                                    <h3>Aprendizaje</h3>
+                                    <p>Adaptamos nuestros cursos de manera on line y asincrónica entendiendo las
+                                          necesidades
+                                          de
+                                          nuestros alumnos.</p>
+                                    <a href="#">Leer mas! </a>
+                              </div>
+                        </div>
+                  </div>
+                  <div class="col-md-4 col-sm-3">
+                        <div class="card">
+                              <img src="/assets/img/img3.jpg">
+                              <div class="contenido">
+                                    <h3>Certificado</h3>
+                                    <p>Título oficial, terciario, con validez nacional, avalado por la UNC.</p>
+                                    <a href="#">Leer mas! </a>
+                              </div>
+                        </div>
+                  </div>
+            </div>
       </div>
 
- <br> <br>
-<div class="container" > <br> <br>
-  <div class="card">
-    <figure>
-        <img src="/assets/img/img1.jpg">
-       
-    </figure>
-    <div class="contenido">
-        <h3>Nivelación</h3>
-        <p>Acceso a un test de equivalencia para que arranques con tu aprendizaje desde donde lo necesites. </p>
-        <a href="#">Leer mas! </a>
-    </div>
+      <div class="container"> <br> <br>
+            <div class="card">
+                  <figure>
+                        <img src="/assets/img/5carrucel.png">
 
-    </div>
+                  </figure>
+                  <div class="contenido">
+                        <h3>Nivel Básico</h3>
+                        <p>Comenzá desde cero con tu aprendizaje,para ir avanzando en el contenido propuesto y
+                              poco a
+                              poco comezar a escribir y hablar el idioma. </p>
 
-    <div class="card">
-        <figure>
-            <img src="/assets/img/img2.jpg">
-           
-        </figure>
-        <div class="contenido">
-            <h3>Aprendizaje</h3>
-            <p>Adaptamos nuestros cursos de manera on line y asincrónica entendiendo las necesidades de nuestros alumnos.</p>
-            <a href="#">Leer mas! </a>
-        </div>
-    
-        </div>
+                  </div>
 
-    
-        <div class="card">
-            <figure>
-                <img src="/assets/img/img3.jpg">
-               
-            </figure>
-            <div class="contenido">
-                <h3>Certificado</h3>
-                <p>Título oficial, terciario, con validez nacional, avalado por la UNC.</p>
-                <a href="#">Leer mas! </a>
             </div>
-        
+
+            <div class="card">
+                  <figure>
+                        <img src="/assets/img/img2.jpg">
+
+                  </figure>
+                  <div class="contenido">
+                        <h3>Nivel Intermedio</h3>
+                        <p>Cursos regulares,que están diseñados para ayudarte a practicar inglés y seguir sumando
+                              conocimientos,partiendo desde una base requerida.</p>
+
+                  </div>
+
             </div>
-    
-  </div>
 
- <div class="container" > <br> <br>
-  <div class="card">
-    <figure>
-        <img src="/assets/img/5carrucel.png">
-       
-    </figure>
-    <div class="contenido">
-        <h3>Nivel Básico</h3>
-        <p>Comenzá desde cero con tu aprendizaje,para ir avanzando en el contenido propuesto y poco a poco comezar a escribir y hablar el idioma. </p>
-        
-    </div>
 
-    </div>
+            <div class="card">
+                  <figure>
+                        <img src="/assets/img/img3.jpg">
 
-    <div class="card">
-        <figure>
-            <img src="/assets/img/img2.jpg">
-           
-        </figure>
-        <div class="contenido">
-            <h3>Nivel Intermedio</h3>
-            <p>Cursos regulares,que están diseñados para ayudarte a practicar inglés y seguir sumando conocimientos,partiendo desde una base requerida.</p>
-            
-        </div>
-    
-        </div>
+                  </figure>
+                  <div class="contenido">
+                        <h3>Nivel Avanzado</h3>
+                        <p>Cursos intensivos,diseñados para ayudarte a practicar inglés avanzando más
+                              rápido,logrando un
+                              nivel alto en corto tiempo, y desarrollando habilidades lingüísticas,producción oral
+                              y
+                              escrita.</p>
 
-    
-        <div class="card">
-            <figure>
-                <img src="/assets/img/img3.jpg">
-               
-            </figure>
-            <div class="contenido">
-                <h3>Nivel Avanzado</h3>
-                <p>Cursos intensivos,diseñados para ayudarte a practicar inglés avanzando más rápido,logrando un nivel alto en corto tiempo, y desarrollando habilidades lingüísticas,producción  oral y escrita.</p>
-                
+                  </div>
+
             </div>
-        
-            </div>
-    
-  </div>
+
+      </div>
 
 
 
