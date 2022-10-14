@@ -27,10 +27,16 @@
             <nav class="navbar navbar-expand-lg">
                   <div class="container-fluid">
                         <img src="/assets/img/logotransparente.png" href="/index.html" alt="Logo">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                              data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown"
+                              aria-expanded="false" aria-label="Toggle navigation">
+                              <span class="navbar-toggler-icon"></span>
+                        </button>
                         <div class="collapse navbar-collapse" id="navbarNavDropdown">
                               <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                                     <li class="nav-item">
-                                          <a class="nav-link active" aria-current="page" href="/assets/quienes_somos.html">Quienes
+                                          <a class="nav-link active" aria-current="page"
+                                                href="/assets/quienes_somos.html">Quienes
                                                 Somos</a>
                                     </li>
                                     <li class="nav-item dropdown">
@@ -39,9 +45,9 @@
                                                 Niveles
                                           </a>
                                           <ul class="dropdown-menu">
-                                                <li><a class="dropdown-item" href="#">Basico</a></li>
-                                                <li><a class="dropdown-item" href="#">Intermedio</a></li>
-                                                <li><a class="dropdown-item" href="#">Avanzado</a></li>
+                                                <li><a class="dropdown-item" href="#nivelBasico">Basico</a></li>
+                                                <li><a class="dropdown-item" href="#nivelInter">Intermedio</a></li>
+                                                <li><a class="dropdown-item" href="#nivelAvan">Avanzado</a></li>
                                           </ul>
                                     </li>
                                     <li class="nav-item">
@@ -63,13 +69,14 @@
       <section class="inicio">
             <div class="container text-center">
                   <div class="row">
-                        <div class="col-md-6 col-sm-4">
+                        <div class="col-md-6 col-sm-4" id="text-inicio">
                               <h1>Inscripciones Abiertas 2023!!</h1>
                               <p>Estás a tiempo de inscribirte a los Cursos del Ciclo 2023! Nuestros cursos se adaptan
                                     siempre a tus necesidades: podés inscribirte a la totalidad del curso o sólo a la
                                     parte que necesites reforzar y más dificultades te da.</p>
-                              <img src="/assets/img/check.gif" width="50" alt="check"><br>
-                              <a href="/form.html" class="button registro"> REGISTRARSE </a>
+                              <img src="/assets/img/check.gif" width="50" alt="check">
+                              <button class="btnRegistro"><a href="/form.html" class="btnRegistro">REGISTRARSE
+                                    </a></button>
                         </div>
                         <div class="col-md-6 col-sm-4">
                               <!--carrucel inscripcion-->
@@ -87,7 +94,7 @@
                                           <div class="carousel-item active">
                                                 <img src="/assets/img/2carrucel.png" class="d-block w-100"
                                                       alt="ingles academia">
-                                                <div class="carousel-caption d-none d-md-block">
+                                                <div class="carousel-caption d-md-block">
                                                       <h5>Aprende inglés más rápido y más fácil este 2023</h5>
                                                       <p>Clases en directo ILIMITADAS
                                                             las 24 horas del día
@@ -97,7 +104,7 @@
                                           <div class="carousel-item">
                                                 <img src="/assets/img/4carrucel.png" class="d-block w-100"
                                                       alt="ingles academia">
-                                                <div class="carousel-caption d-none d-md-block">
+                                                <div class="carousel-caption d-md-block">
                                                       <h5>¿Por qué nuestro curso?</h5>
                                                       <p>Tiene herramienta que
                                                             perfecciona tu pronunciación
@@ -107,7 +114,7 @@
                                           <div class="carousel-item">
                                                 <img src="/assets/img/5carrucel.png" class="d-block w-100"
                                                       alt="ingles academia">
-                                                <div class="carousel-caption d-none d-md-block">
+                                                <div class="carousel-caption d-md-block">
                                                       <h5>Seguimiento a tu progreso</h5>
                                                       <p>Te acompañamos de manera personalizada a través de WhatsApp,
                                                             para estar conectados contigo durante tu proceso.
@@ -206,8 +213,11 @@
                                     <img src="/assets/img/img1.jpg">
                                     <div class="contenido">
                                           <h3>Nivelación</h3>
-                                          <p>Evaluamos tus habilidades para conocer tu nivel de inglés, de modo que puedas sumarte al curso más adecuado según tus conocimientos previos.</p>
-                                          <a href="#">Consultanos! </a> <!--reedireccionar a contacto-->
+                                          <p>Evaluamos tus habilidades para conocer tu nivel de inglés, de modo que
+                                                puedas sumarte al curso más adecuado según tus conocimientos previos.
+                                          </p>
+                                          <a href="#">Consultanos! </a>
+                                          <!--reedireccionar a contacto-->
                                     </div>
                               </div>
                         </div>
@@ -220,7 +230,8 @@
                                                 necesidades
                                                 de
                                                 nuestros alumnos.</p>
-                                          <a href="#">Leer mas! </a> <!--reedireccionar a FAQ-->
+                                          <a href="#">Leer mas! </a>
+                                          <!--reedireccionar a FAQ-->
                                     </div>
                               </div>
                         </div>
@@ -230,7 +241,8 @@
                                     <div class="contenido">
                                           <h3>Certificado</h3>
                                           <p>Título oficial, terciario, con validez nacional, avalado por la UNC.</p>
-                                          <a href="#">Leer mas! </a> <!--reedireccionar a FAQ-->
+                                          <a href="#">Leer mas! </a>
+                                          <!--reedireccionar a FAQ-->
                                     </div>
                               </div>
                         </div>
@@ -246,7 +258,7 @@
                               <div class="card">
                                     <img src="/assets/img/nivel3.jpg">
                                     <div class="contenido">
-                                          <h3>Nivel Básico</h3>
+                                          <h3 id="nivelBasico">Nivel Básico</h3>
                                           <p>Comenzá desde cero con tu aprendizaje,para ir avanzando en el contenido
                                                 propuesto
                                                 y
@@ -260,7 +272,7 @@
                               <div class="card">
                                     <img src="/assets/img/nivel2.jpg">
                                     <div class="contenido">
-                                          <h3>Nivel Intermedio</h3>
+                                          <h3 id="nivelInter">Nivel Intermedio</h3>
                                           <p>Cursos regulares,que están diseñados para ayudarte a practicar inglés y
                                                 seguir
                                                 sumando
@@ -273,7 +285,7 @@
                               <div class="card">
                                     <img src="/assets/img/nivel1.jpg">
                                     <div class="contenido">
-                                          <h3>Nivel Avanzado</h3>
+                                          <h3 id="nivelAvan">Nivel Avanzado</h3>
                                           <p>Cursos intensivos, para ayudarte a practicar inglés avanzando más
                                                 rápido,logrando un
                                                 nivel alto en corto tiempo de produccion oral/escrita y escucha activa.
@@ -286,32 +298,39 @@
       </section>
       <!--Mision/Vision-->
       <section>
-       <div class="container">
-            <div class="row">
-                  <div class="col-2">
-                        <img src="/assets/img/mision.png" alt="Mision">
+            <div class="container">
+                  <div class="row">
+                        <div class="col-2">
+                              <img src="/assets/img/mision.png" alt="Mision">
+                        </div>
+                        <div class="col-8">
+                              <p>Nuestra <strong>Misión</strong> principal es la enseñanza del idioma inglés a niños,
+                                    jóvenes y adultos, y también brindar información sobre los servicios necesarios para
+                                    el intercambio cultural con los distintos paises de habla inglesa.</p>
+                        </div>
                   </div>
-                  <div class="col-8">
-                        <p>Nuestra <strong>Misión</strong> principal es la enseñanza del idioma inglés a niños, jóvenes y adultos, y también brindar información sobre los servicios necesarios para el intercambio cultural con los distintos paises de habla inglesa.</p>
+                  <div class="row">
+                        <div class="col-8">
+                              <p>Tenemos la <strong>Visón</strong> y creemos firmemente que la educación de calidad al
+                                    alcance del mayor número posible de personas de todas las edades, es necesaria para
+                                    la convivencia internacional, el desarrollo comunitario, la realización y expresión
+                                    personal y el mejoramiento de las relaciones entre los países del mundo.</p>
+                        </div>
+                        <div class="col-2">
+                              <img src="/assets/img/vision.png" alt="Vision">
+                        </div>
                   </div>
-             </div>
-             <div class="row">
-                  <div class="col-8">
-                        <p>Tenemos la <strong>Visón</strong> y creemos firmemente que la educación de calidad al alcance del mayor número posible de personas de todas las edades, es necesaria para la convivencia internacional, el desarrollo comunitario, la realización y expresión personal y el mejoramiento de las relaciones entre los países del mundo.</p>    
+                  <div class="row">
+                        <div class="col-2">
+                              <img src="/assets/img/valor.png" alt="Valor">
+                        </div>
+                        <div class="col-8">
+                              <p>Nuestros <strong>Valores :</strong> Excelencia y calidad en nuetros servicios,
+                                    eficiencia, innovación, pasión por lo que hacemos, compromiso con nuestros alumnos,
+                                    responsabilidad, transparencia.</p>
+                        </div>
                   </div>
-                  <div class="col-2">
-                        <img src="/assets/img/vision.png" alt="Vision">
-                  </div>
-             </div>
-             <div class="row">
-                  <div class="col-2">
-                        <img src="/assets/img/valor.png" alt="Valor">
-                  </div>
-                  <div class="col-8">
-                        <p>Nuestros <strong>Valores :</strong> Excelencia y calidad en nuetros servicios, eficiencia, innovación, pasión por lo que hacemos, compromiso con nuestros alumnos, responsabilidad, transparencia.</p>
-                  </div>
-             </div>
-       </div>     
+            </div>
 
       </section>
       <!--DUDAS-->
@@ -325,13 +344,16 @@
                                     <button class="accordion-button" type="button" data-bs-toggle="collapse"
                                           data-bs-target="#collapseOne" aria-expanded="true"
                                           aria-controls="collapseOne">
-                                          <strong>¿Tienen cursos para niños? ¿A partir de que edad se pueden anotar?</strong>
+                                          <strong>¿Tienen cursos para niños? ¿A partir de que edad se pueden
+                                                anotar?</strong>
                                     </button>
                               </h2>
                               <div id="collapseOne" class="accordion-collapse collapse show"
                                     aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                                     <div class="accordion-body">
-                                          Cursos a partir de los 7 años, nuestro método de enseñanza para niños utiliza el juego como uno de los recursos para acompañar la enseñanza del idioma, por los beneficios que éste aporta al desarrollo del aprendizaje.
+                                          Cursos a partir de los 7 años, nuestro método de enseñanza para niños utiliza
+                                          el juego como uno de los recursos para acompañar la enseñanza del idioma, por
+                                          los beneficios que éste aporta al desarrollo del aprendizaje.
                                     </div>
                               </div>
                         </div>
@@ -346,7 +368,9 @@
                               <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
                                     data-bs-parent="#accordionExample">
                                     <div class="accordion-body">
-                                          Modalidad asincrónica, completamente a distancia, para que puedas manejarte libremente en tus tiempos y horarios disponibles. Consultas disponibles con nuestros tutores desde las 8h am. hasta las 22pm.
+                                          Modalidad asincrónica, completamente a distancia, para que puedas manejarte
+                                          libremente en tus tiempos y horarios disponibles. Consultas disponibles con
+                                          nuestros tutores desde las 8h am. hasta las 22pm.
                                     </div>
                               </div>
                         </div>
@@ -361,7 +385,8 @@
                               <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
                                     data-bs-parent="#accordionExample">
                                     <div class="accordion-body">
-                                          Podrás utilizar tu certificado a nivel provincial y nacional y validarlo para hacer traducciones y proyectos de manera profesional.
+                                          Podrás utilizar tu certificado a nivel provincial y nacional y validarlo para
+                                          hacer traducciones y proyectos de manera profesional.
                                     </div>
                               </div>
                         </div>
