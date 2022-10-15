@@ -145,10 +145,18 @@ footer, .footer{
     line-height: 28px;   
 }
 .copy{
-       padding-top: 2%;
+      padding-top: 2%;
       font-size: 12px;
       text-align: center;
       font-weight: lighter;
      color: var(--secondary);
+}
+.redes{
+      text-decoration: none;
+      text-transform: none;
+      color:var(--diabled);
+}
+.redes:hover{
+      color: var(--publish);
 }
       

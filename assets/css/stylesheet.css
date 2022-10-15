@@ -152,4 +152,11 @@ footer, .footer{
             font-weight: lighter;
             color: var(--secondary);
       }
-      
+.redes{
+      text-decoration: none;
+      text-transform: none;
+      color:var(--diabled);
+}
+.redes:hover{
+      color: var(--publish);
+}

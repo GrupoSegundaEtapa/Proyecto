@@ -1,70 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registro</title>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Registro</title>
 </head>
+
 <body>
-    <form method="post" action="informacion.php">
-        <h1>Formulario de Contacto</h1>
-        
-        <label for="nombre">Nombre y Apellido</label>
-        <input type="text" name="nombre" id="name"
-        placeholder="Nombre"> <br> <br>
-        <label for="nombre">Dni</label>
-        <input type="text" name="dni" id="dni"
-        placeholder="Número"> <br> <br>
-        
-        <label for="email">Email</label>
-        <input type="email" name="email" id="email"
-        placeholder="Correo electrónico"><br> <br> 
+      <form method="post" action="informacion.php">
+            <h1>Formulario de Contacto</h1>
 
-        <label for="teléfono">Teléfono</label>
-        <input type="text" name="telefono" id="teléfono"
-        placeholder="Número"> <br> <br>
-    <fieldset>
-        <legend>Que idioma quieres aprender</legend>
-        
-        <label for="idioma">Ingles</label>
-        <input type="checkbox" id="ingles" name="idioma"> <br>
-        <label for="idioma">Francés</label>
-        <input type="checkbox" id="frances" name="idioma"> <br>
-        <label for="idioma">Alemán</label>
-        <input type="checkbox" id="aleman" name="idioma"> <br>
-        <label for="idioma">Italiano</label>
-        <input type="checkbox" id="italiano" name="idioma"> <br>
-        <label for="nombre">Otro</label> 
-        <input type="text" name="idioma" id="otro"><br> 
-    </fieldset>
-        <p>Nivel Actual</p>
-        <fieldset>
-        <input type="radio" id="bajo" value="bajo" name="ingles">
-        <label for="bajo">Bajo</label> <br>
-        <input type="radio" id="medio" value="medio" name="ingles">
-        <label for="medio">Medio</label> <br>
-        <input type="radio" id="alto" value="alto" name="ingles">
-        <label for="alto">Alto</label> <br> <br>
-    </fieldset> <br>
-    <p>Modalidad</p>
-    <input type="radio" id="Presencial" value="presencial" name="modalidad">
-    <label for="presencial">Presencial</label>
-    <input type="radio" id="On Line" value="online" name="modalidad">
-    <label for="online">On Line</label>
+            <label for="nombre">Nombre y Apellido</label>
+            <input type="text" name="nombre" id="name" placeholder="Nombre"> <br> <br>
+            <label for="nombre">Dni</label>
+            <input type="text" name="dni" id="dni" placeholder="Número"> <br> <br>
 
-    <p>Provincia donde vives</p>
-    <select id="provincia">
-        <option value="buenosaires">Buenos Aires</option>
-        <option value="cordoba">Córdoba</option>
-        <option value="santafe">Santa Fé</option>
-        <option value="sanluis">San Luis</option>
-        <option value="mendoza">Mendoza</option>
-        <option value="otro">Otro</option>
-    </select> <br> <br>
-        <input type="submit"> 
-        
-    </form>  <br>
-    <a href="index.html">Volver</a>
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" placeholder="Correo electrónico"><br> <br>
+
+            <label for="teléfono">Teléfono</label>
+            <input type="text" name="telefono" id="teléfono" placeholder="Número"> <br> <br>
+            <fieldset>
+                  <legend>Que idioma quieres aprender</legend>
+
+                  <label for="idioma">Ingles</label>
+                  <input type="checkbox" id="ingles" name="idioma"> <br>
+                  <label for="idioma">Francés</label>
+                  <input type="checkbox" id="frances" name="idioma"> <br>
+                  <label for="idioma">Alemán</label>
+                  <input type="checkbox" id="aleman" name="idioma"> <br>
+                  <label for="idioma">Italiano</label>
+                  <input type="checkbox" id="italiano" name="idioma"> <br>
+                  <label for="nombre">Otro</label>
+                  <input type="text" name="idioma" id="otro"><br>
+            </fieldset>
+            <p>Nivel Actual</p>
+            <fieldset>
+                  <input type="radio" id="bajo" value="bajo" name="ingles">
+                  <label for="bajo">Bajo</label> <br>
+                  <input type="radio" id="medio" value="medio" name="ingles">
+                  <label for="medio">Medio</label> <br>
+                  <input type="radio" id="alto" value="alto" name="ingles">
+                  <label for="alto">Alto</label> <br> <br>
+            </fieldset> <br>
+            <p>Modalidad</p>
+            <input type="radio" id="Presencial" value="presencial" name="modalidad">
+            <label for="presencial">Presencial</label>
+            <input type="radio" id="On Line" value="online" name="modalidad">
+            <label for="online">On Line</label>
+
+            <p>Provincia donde vives</p>
+            <select id="provincia">
+                  <option value="buenosaires">Buenos Aires</option>
+                  <option value="cordoba">Córdoba</option>
+                  <option value="santafe">Santa Fé</option>
+                  <option value="sanluis">San Luis</option>
+                  <option value="mendoza">Mendoza</option>
+                  <option value="otro">Otro</option>
+            </select> <br> <br>
+            <input type="submit">
+
+      </form> <br>
+      <a href="index.html">Volver</a>
 </body>
+
+<footer>
+      <div class="container">
+            <div class="row">
+                  <div class="col">
+                        <h6 class="footer">CONTACTANOS</h6>
+                        <ul class="footer">
+                              <li><a href="https://goo.gl/maps/znBvG6TRoXPQRDNx9" class="redes"><i
+                                                class="fa-solid fa-map-pin"></i>
+                                          Av. 9 de Julio</a></li>
+                              <li><i class="fa-solid fa-phone-volume"></i>
+                                    (0351) 4527030</li>
+                              <li><a href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCJvrcCkmljTqBXwPrvRnrnqtqnBcGQvwbWKFXVXRTZXnLwNfXDNDSvQxjCRVhKzbsMCxmQq"
+                                          class="redes"><i class="fa-solid fa-envelope"></i>
+                                          academy@academy.org</a></li>
+                        </ul>
+                  </div>
+                  <div class="col">
+                        <h6 class="footer"><i class="fa-solid fa-arrow-down"></i> VISITANOS</h6>
+                        <iframe
+                              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.016887893333!2d-58.383764449772826!3d-34.60373446490896!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4aa9f0a6da5edb%3A0x11bead4e234e558b!2sObelisco!5e0!3m2!1ses-419!2sar!4v1665658332210!5m2!1ses-419!2sar"
+                              width="180" height="100" style="border:0;" allowfullscreen="" loading="lazy"
+                              referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                  </div>
+                  <div class="col">
+                        <h6 class="footer">EN NUETRAS REDES</h6>
+                        <ul class="footer">
+                              <li><a href="https://www.instagram.com/" class="redes"> Instagram <i
+                                                class="fa-brands fa-instagram"></i></a></li>
+                              <li><a href="https://www.facebook.com/" class="redes"> Facebook <i
+                                                class="fa-brands fa-facebook"></i></a></li>
+                              <li><a href="https://www.linkedin.com/" class="redes"> Linkedin <i
+                                                class="fa-brands fa-linkedin"></i></a></li>
+                        </ul>
+                  </div>
+
+
+            </div>
+      </div>
+      <div row class="copy"><i class="fa-sharp fa-solid fa-copyright"></i>
+            English Academy S.A
+      </div>
+</footer>
+
 </html>
