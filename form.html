@@ -5,10 +5,74 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registro</title>
+    <rel="stylesheet"
+            integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+      <link rel="stylesheet" href="/assets/css/stylesheet.css">
+      <!--iconos-->
+      <script src="https://kit.fontawesome.com/eb3caab6e7.js" crossorigin="anonymous"></script>
+      <!--css  pag de BOOSTRAP -->
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+      <!-- JavaScript  pag de BOOSTRAP -->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+            crossorigin="anonymous"></script>
+      <!--fontnav-->
+      <link href="https://fonts.googleapis.com/css2?family=Alkalami&family=Bungee+Spice&family=Prata&family=Share+Tech+Mono&display=swap"
+            rel="stylesheet">
 </head>
 <body>
-    <form method="post" action="informacion.php">
-        <h1>Formulario de Contacto</h1>
+    <header>
+        <nav class="navbar navbar-expand-lg">
+              <div class="container-fluid">
+                    <a href="index.html">   <img src="/assets/img/logotransparente.png" href="/index.html" alt="Logo"> </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                          data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown"
+                          aria-expanded="false" aria-label="Toggle navigation">
+                          <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                <li class="nav-item">
+                                      <a class="nav-link active" aria-current="page"
+                                            href="/quienes_somos.html">Quienes
+                                            Somos</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                      <a class="nav-link dropdown-toggle" href="#" role="button"
+                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                            Niveles
+                                      </a>
+                                      <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="#nivelBasico">Basico</a></li>
+                                            <li><a class="dropdown-item" href="#nivelInter">Intermedio</a></li>
+                                            <li><a class="dropdown-item" href="#nivelAvan">Avanzado</a></li>
+                                      </ul>
+                                </li>
+                                <li class="nav-item">
+                                      <a class="nav-link" href="/contacto.html">Contactanos</a>
+                                </li>
+                          </ul>
+                          <form class="d-flex">
+                                <input class="form-control me-2" type="search" placeholder="Buscar"
+                                      aria-label="Search">
+                                <button class="btn btn nav" type="submit"><i
+                                            class="fa-solid fa-magnifying-glass"></i></button>
+                          </form>
+                          <button class="btn btn nav" type="button">Acceso<br> Campus</button>
+                    </div>
+              </div>
+        </nav>
+  </header>
+<br><br>
+<div class="container">
+    <div class="row">
+        <div class="col-6">
+      <form method="POST" action="informacion.php">
+        <h1>Formulario de Inscripcion</h1>
+        <h2>a nuestros cursos</h2>
+
+        <br><br>
         
         <label for="nombre">Nombre y Apellido</label>
         <input type="text" name="nombre" id="name"
@@ -24,7 +88,7 @@
         <label for="teléfono">Teléfono</label>
         <input type="text" name="telefono" id="teléfono"
         placeholder="Número"> <br> <br>
-    <fieldset>
+   <!-- <fieldset>
         <legend>Que idioma quieres aprender</legend>
         
         <label for="idioma">Ingles</label>
@@ -37,7 +101,7 @@
         <input type="checkbox" id="italiano" name="idioma"> <br>
         <label for="nombre">Otro</label> 
         <input type="text" name="idioma" id="otro"><br> 
-    </fieldset>
+    </fieldset> -->
         <p>Nivel Actual</p>
         <fieldset>
         <input type="radio" id="bajo" value="bajo" name="ingles">
@@ -51,7 +115,7 @@
     <input type="radio" id="Presencial" value="presencial" name="modalidad">
     <label for="presencial">Presencial</label>
     <input type="radio" id="On Line" value="online" name="modalidad">
-    <label for="online">On Line</label>
+    <label for="online">Online</label>
 
     <p>Provincia donde vives</p>
     <select id="provincia">
@@ -64,7 +128,59 @@
     </select> <br> <br>
         <input type="submit"> 
         
-    </form>  <br>
-    <a href="index.html">Volver</a>
+    </form> 
+</div>
+
+<div class="col-6"></div>
+
+
+
+</div>
+    
+    <br>
+    <a href="index.html" class="btn-danger">Volver</a>
+
+    <br><br><br>        
+</div>
+
 </body>
+
+<footer>
+    <div class="container">
+          <div class="row">
+                <div class="col">
+                      <h6 class="footer">CONTACTANOS</h6>
+                      <ul class="footer">
+                            <li><i class="fa-solid fa-map-pin"></i>
+                                  Av. 9 de Julio</li>
+                            <li><i class="fa-solid fa-phone-volume"></i>
+                                  (0351) 4527030</li>
+                            <li><i class="fa-solid fa-envelope"></i>
+                                  academy@academy.org</li>
+                      </ul>
+                </div>
+                <div class="col">
+                      <h6 class="footer"><i class="fa-solid fa-arrow-down"></i> VISITANOS</h6>
+                      <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.016887893333!2d-58.383764449772826!3d-34.60373446490896!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4aa9f0a6da5edb%3A0x11bead4e234e558b!2sObelisco!5e0!3m2!1ses-419!2sar!4v1665658332210!5m2!1ses-419!2sar"
+                            width="180" height="100" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade">
+                      </iframe>
+                </div>
+                <div class="col">
+                      <h6 class="footer">EN NUETRAS REDES</h6>
+                      <ul class="footer">
+                            <li>Instagram <i class="fa-brands fa-instagram"></i></li>
+                            <li>Facebook <i class="fa-brands fa-facebook"></i></li>
+                            <li>Linkedin <i class="fa-brands fa-linkedin"></i></li>
+                      </ul>
+                </div>
+
+
+          </div>
+    </div>
+    <div row class="copy"><i class="fa-sharp fa-solid fa-copyright"></i>
+          English Academy S.A
+    </div>
+</footer>
 </html>
