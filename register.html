@@ -2,59 +2,56 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">"
-    <meta name = "viewport" content="width=device-width, initial-scale=1.0">
-    <title>Acceso Academia</title>
-    <link rel="stylesheet" href="/assets/css/style-register.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login y Registro - Academia de Inglés</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="assets/css/style-register.css">
 </head>
 <body>
 
-    <div class="container">
-        <div class="form-box"> 
-            <div class="button-box">
-                <div id="elegir"></div>
-                <button type="button" class="toggle-btn" onclick="login()">Iniciar Sesión</button>
-                <button type="button" class="toggle-btn" onclick="registrar()">Registrarse</button>
-            </div>
-            <div class="redes"></div>  
-                <img src="/assets/img/fb.png" alt="icono_facbook">
-                <img src="/assets/img/gmail.png" alt="icono_gmail">
-                <img src="/assets/img/tw.png" alt="icono_twitter">
-            </div>
-            <form id="login" class="input-group">
-                <input type="text" class="input-field" placeholder="Nombre de Usuario" required>
-                <input type="password" class="input-field" placeholder="Contraseña" required>
-                <input type="checkbox" class="check-box"><span>Recordar Contraseña.</span>
-                <button type="submit" class="submit-btn">Acceder</button>
-            </form>
-            <form id="registrar" class="input-group">
-                <input type="text" class="input-field" placeholder="Nombre de Usuario" required>
-                <input type="email" class="input-field" placeholder="Correo electrónico" required>
-                <input type="password" class="input-field" placeholder="Contraseña" required>
-                <input type="checkbox" class="check-box"><span>Acepto los términos y condiciones.</span>
-                <button type="submit" class="submit-btn">Registrarme</button>
-            </form>
-        </div>        
-    </div>
+        <main>
 
-    <script>
-        var x = document.getElementById("login");
-        var y = document.getElementById("registrar");
-        var z = document.getElementById("elegir");
+            <div class="contenedor__todo">
+                <div class="caja__trasera">
+                    <div class="caja__trasera-login">
+                        <h3>¿Ya tienes una cuenta?</h3>
+                        <p>Inicia sesión para entrar en la página</p>
+                        <button id="btn__iniciar-sesion">Iniciar Sesión</button>
+                    </div>
+                    <div class="caja__trasera-register">
+                        <h3>¿Aún no tienes una cuenta?</h3>
+                        <p>Regístrate para que puedas iniciar sesión</p>
+                        <button id="btn__registrarse">Regístrarse</button>
+                    </div>
+                </div>
 
-        function login(){
-            x.style.left = "50px";
-            y.style.left = "450px";
-            z.style.left = "0px";
-        }
-        function registar(){
-            x.style.left = "-400px";
-            y.style.left = "50px";
-            z.style.left = "120px";
-        }
-    </script>
+                <!--Formulario de Login y registro-->
+                <div class="contenedor__login-register">
+                    <!--Login-->
+                    <form action="" class="formulario__login">
+                        <h2>Iniciar Sesión</h2>
+                        <input type="text" placeholder="Correo Electronico">
+                        <input type="password" placeholder="Contraseña">
+                        <button>Entrar</button>
+                    </form>
+
+                    <!--Register-->
+                    <form action="" class="formulario__register">
+                        <h2>Regístrarse</h2>
+                        <input type="text" placeholder="Nombre completo">
+                        <input type="text" placeholder="Correo Electronico">
+                        <input type="text" placeholder="Usuario">
+                        <input type="password" placeholder="Contraseña">
+                        <button>Regístrarse</button>
+                    </form>
+                </div>
+            </div>
+
+        </main>
+
+        <script src="assets/js/script.js"></script>
 </body>
-
-
-
 </html>

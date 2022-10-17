@@ -1,116 +1,176 @@
 *{
     margin: 0;
     padding: 0;
-    font-size: 13px;
-    font-family: fantasy;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
 }
 
-.container{
-    height: 100%;
-    width: 100%;
-    background-image: linear-gradient(#432919, #432919, url(/assets/img/educacion-sup1.jpg));
-    background-position: center;
+body{
+    background-image: url(../img/educacion-sup1.jpg);
     background-size: cover;
-    position: absolute;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
 }
 
-.formbox-box{
-    width: 370px;
-    height: 455px;
-    position: relative;
-    margin: 6% auto;
-    background: #fff;
-    padding: 5px;
-    border-radius: 10px;
-    overflow: hidden;
-}
-
-.button-box{
-    width:240px;
-    margin: 30px auto;
-    position: relative;
-    box-shadow: 0 0 20px 9px #784B15;
-    border-radius: 30px;
-}
-
-.toggle-btn{
-    padding: 10px 22px;
-    cursor: pointer;
-    background: transparent;
-    border: 0px;
-    outline: none;
-    position: relative;
-}
-#elegir{
-    top: 0;
-    left: 0;
-    position: absolute;
-    width: 120px;
-    height: 100;
-    background: linear-gradient( to right, #F7E1CE, #784B15);
-    border-radius: 30px;
-    transition: 0.8s;
-}
-
-.redes{
-    margin: 30px auto;
-    text-align: center;
-}
-
-.redes img{
-    width: 30px;
-    margin: 0 12px;
-    box-shadow: 0 0 20px 9px #784B15;
-    cursor: pointer;
-    border-radius: 50%;
-}
-
-.input-group{
-    top: 180px;
-    position: absolute;
-    width: 280px;
-    transition: 0.8s;
-}
-
-.input-field{
+main{
     width: 100%;
-    padding: 10px 0;
-    margin: 5px 0;
-    border-left: 0;
-    border-top: 0;
-    border-right: 0;
-    border-bottom: 2px solid #432919;
-    outline: none;
-    background: transparent;
-}
-
-.submit-btn{
-    width: 85%;
-    padding: 10px 30px;
-    cursor: pointer;
-    display: block;
+    padding: 20px;
     margin: auto;
-    background: linear-gradient( to right, #F7E1CE, #784B15);
-    border: 0px;
+    margin-top: 100px;
+}
+
+.contenedor__todo{
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+    position: relative;
+}
+
+.caja__trasera{
+    width: 100%;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: center;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    background-color: #CFB6A2;
+
+}
+
+.caja__trasera div{
+    margin: 100px 40px;
+    color: white;
+    transition: all 500ms;
+}
+
+
+.caja__trasera div p,
+.caja__trasera button{
+    margin-top: 30px;
+}
+
+.caja__trasera div h3{
+    font-weight: 400;
+    font-size: 26px;
+}
+
+.caja__trasera div p{
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.caja__trasera button{
+    padding: 10px 40px;
+    border: 2px solid black;
+    font-size: 14px;
+    background: transparent;
+    font-weight: 600;
+    cursor: pointer;
+    color: white;
     outline: none;
-    border-radius: 30px;
+    transition: all 300ms;
 }
 
-.check-box{
-    margin: 30px 10px 30px 0;
+.caja__trasera button:hover{
+    background: #fff;
+    color: #CFB6A2;
 }
 
-.span{
-    color: black;
-    font-size: 12px;
-    bottom: 64px;
+/*Formularios*/
+
+.contenedor__login-register{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 380px;
+    position: relative;
+    top: -185px;
+    left: 10px;
+
+    /*La transicion va despues del codigo JS*/
+    transition: left 500ms cubic-bezier(0.175, 0.885, 0.320, 1.275);
+}
+
+.contenedor__login-register form{
+    width: 100%;
+    padding: 80px 20px;
+    background: white;
     position: absolute;
+    border-radius: 20px;
 }
 
-#login{
-    left: 50px;
+.contenedor__login-register form h2{
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #CFB6A2;
 }
 
-#registrar{
-    left: 450px;
+.contenedor__login-register form input{
+    width: 100%;
+    margin-top: 20px;
+    padding: 10px;
+    border: none;
+    background: #F2F2F2;
+    font-size: 16px;
+    outline: none;
+}
+
+.contenedor__login-register form button{
+    padding: 10px 40px;
+    margin-top: 40px;
+    border: none;
+    font-size: 14px;
+    background: #CFB6A2;
+    font-weight: 600;
+    cursor: pointer;
+    color: white;
+    outline: none;
+}
+
+
+
+
+.formulario__login{
+    opacity: 1;
+    display: block;
+}
+.formulario__register{
+    display: none;
+}
+
+
+
+@media screen and (max-width: 850px){
+
+    main{
+        margin-top: 50px;
+    }
+
+    .caja__trasera{
+        max-width: 350px;
+        height: 300px;
+        flex-direction: column;
+        margin: auto;
+    }
+
+    .caja__trasera div{
+        margin: 0px;
+        position: absolute;
+    }
+
+
+    /*Formularios*/
+
+    .contenedor__login-register{
+        top: -10px;
+        left: -5px;
+        margin: auto;
+    }
+
+    .contenedor__login-register form{
+        position: relative;
+    }
 }
