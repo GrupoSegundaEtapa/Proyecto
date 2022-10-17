@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">"
+    <meta name = "viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acceso Academia</title>
+    <link rel="stylesheet" href="/assets/css/style-register.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="form-box"> 
+            <div class="button-box">
+                <div id="elegir"></div>
+                <button type="button" class="toggle-btn" onclick="login()">Iniciar Sesión</button>
+                <button type="button" class="toggle-btn" onclick="registrar()">Registrarse</button>
+            </div>
+            <div class="redes"></div>  
+                <img src="/assets/img/fb.png" alt="icono_facbook">
+                <img src="/assets/img/gmail.png" alt="icono_gmail">
+                <img src="/assets/img/tw.png" alt="icono_twitter">
+            </div>
+            <form id="login" class="input-group">
+                <input type="text" class="input-field" placeholder="Nombre de Usuario" required>
+                <input type="password" class="input-field" placeholder="Contraseña" required>
+                <input type="checkbox" class="check-box"><span>Recordar Contraseña.</span>
+                <button type="submit" class="submit-btn">Acceder</button>
+            </form>
+            <form id="registrar" class="input-group">
+                <input type="text" class="input-field" placeholder="Nombre de Usuario" required>
+                <input type="email" class="input-field" placeholder="Correo electrónico" required>
+                <input type="password" class="input-field" placeholder="Contraseña" required>
+                <input type="checkbox" class="check-box"><span>Acepto los términos y condiciones.</span>
+                <button type="submit" class="submit-btn">Registrarme</button>
+            </form>
+        </div>        
+    </div>
+
+    <script>
+        var x = document.getElementById("login");
+        var y = document.getElementById("registrar");
+        var z = document.getElementById("elegir");
+
+        function login(){
+            x.style.left = "50px";
+            y.style.left = "450px";
+            z.style.left = "0px";
+        }
+        function registar(){
+            x.style.left = "-400px";
+            y.style.left = "50px";
+            z.style.left = "120px";
+        }
+    </script>
+</body>
+
+
+
+</html>
