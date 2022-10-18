@@ -1,3 +1,11 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #F7E1CE;
+}
 .barra{
     font-family: Arial, Helvetica, sans-serif;
     width: 10%;
@@ -31,4 +39,93 @@
     padding-bottom: 7px;
     font-size: 0px;
     
+}
+
+.barra img{
+    padding-top: 20px;
+    padding-left: 5px;
+}
+
+.barra:hover{
+    width: 20%;
+    height: 100%;
+    background-color: #784B15;
+}
+
+.barra:hover a {
+    font-size: 20px;
+    color: white;
+    display:block;
+    padding: 20px;
+}
+
+.barra:hover li{
+    border-top: 1px solid black;
+    width: 100%;
+}
+
+.barra:hover ul:last-of-type{
+    border-bottom: 1px solid black;
+}
+
+.barra:hover a:hover{
+    font-size: 25px;
+    padding: 30px 0px;
+    background-color: #F7E1CE;
+}
+
+header{
+    display: flex;
+    height: 70px;
+    background-color: #432919;
+    justify-content: space-between;
+    padding: 10px;
+
+
+
+}
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+.logo h2{
+    color: #F7E1CE;
+}
+
+.logo img{
+    height: 65px;
+    margin-right: 10px;
+}
+
+.clase1 {
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+}
+
+.clase2 {
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+}
+
+.clase3 {
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+}
+
+.tareas{
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+}
+
+.tarea1{
+    text-align: center;
+}
+.tarea1 ul{
+    list-style: none;
+    text-decoration: none;
 }
