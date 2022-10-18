@@ -6,7 +6,7 @@
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-      <link rel="stylesheet" href="/assets/css/stylesheet.css">
+      <link rel="stylesheet" href="/assets/css/form.css">
       <!--iconos-->
       <script src="https://kit.fontawesome.com/eb3caab6e7.js" crossorigin="anonymous"></script>
       <!--css  pag de BOOSTRAP -->
@@ -67,11 +67,54 @@
             </nav>
       </header>
 
-      <!-- AGREGAR CONTENIDO -->
+      <div class="container">
+            <div class="row">
+                  <div class="col-7 form">
+                        <h2 class="titulo">Formulario de Consulta</h2>
+                        <form action="/action_page.php">
+                              <label for="fname">Nombre</label><br>
+                              <input type="text" id="fname" name="fname" placeholder="Nombre" value=""><br>
+                              <label for="lname">Apellido</label><br>
+                              <input type="text" id="lname" name="lname" placeholder="Apellido" value=""><br>
+                              <label for="fname">email</label><br>
+                              <input type="text" id="fname" name="fname" placeholder="Correo electrónico" value=""><br>
+                              <label for="exampleFormControlTextarea1" class="form-label">Realiza tu consulta</label>
+                              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                              <br>
+                              <h2 class="titulo">¿ Cómo nos conociste ?</h2>
+                              <form>
+                                    <input type="radio" id="whatsapp" name="fav_language" value="">
+                                      <label for="">WhatsApp</label><br>
+                                    <input type="radio" id="linkedin" name="fav_language" value="">
+                                    <label for="javascript">LinkedIn</label><br>
+                                    <input type="radio" id="instagram" name="fav_language" value="">
+                                    <label for="javascript">Instagram</label><br>
+                                    <input type="radio" id="instagram" name="fav_language" value="">
+                                    <label for="javascript">Recomendados</label><br>
+                                    <input type="radio" id="instagram" name="fav_language" value="">
+                                    <label for="javascript">Publicidad</label><br>
+                                    <input type="radio" id="instagram" name="fav_language" value="">
+                                    <label for="javascript">Internet</label>
+                              </form>
 
 
 
-      <br><br><br><br><br><br><br>
+                              <input type="submit" value="Enviar">
+                        </form>
+                        <br>
+                        <a href="index.html" class="btn">Volver</a>
+
+                  </div>
+
+                  <div class="col-4">
+                        <img src="/assets/img/form.png" alt="consulta" width="500">
+
+                  </div>
+
+
+            </div>
+
+      </div>
 
 
 
