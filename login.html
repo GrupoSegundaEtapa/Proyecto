@@ -40,13 +40,13 @@
                 <!--Formulario de Login y registro-->
                 <div class="contenedor__login-register">
                     <!--Login-->
-                    <form action="val_login.php" class="formulario__login">
+                    <form action="val_login.php" method="POST" class="formulario__login">
                         <h2>Iniciar Sesión</h2>
                         <div class="g-signin2" data-onsuccess="onSignIn"></div>
                         <div class="data">
                         </div>
-                        <input type="text" placeholder="Correo Electronico">
-                        <input type="password" placeholder="Contraseña">
+                        <input type="text" name="userMail" placeholder="Correo Electronico">
+                        <input type="password" name="userPw" placeholder="Contraseña">
                         <input type="submit" class="btnEntrar" value="Entrar" >
                     </form>
 
