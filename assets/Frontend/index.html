@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <!--iconos-->
+      <script src="https://kit.fontawesome.com/eb3caab6e7.js" crossorigin="anonymous"></script>
+      <!--css  pag de BOOSTRAP -->
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+      <!--fontnav-->
+      <link href="https://fonts.googleapis.com/css2?family=Alkalami&family=Bungee+Spice&family=Prata&family=Share+Tech+Mono&display=swap"
+            rel="stylesheet">
+      <link rel="stylesheet" href="/assets/css/stylesheet.css">
+      <title>Academia </title>
+</head>
+
+<body>
+      <header>
+            <nav class="navbar navbar-expand-lg">
+                  <div class="container-fluid">
+                        <a href="index.html"> <img src="/assets/img/logotransparente.png" href="/index.html" alt="Logo">
+                        </a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                              data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown"
+                              aria-expanded="false" aria-label="Toggle navigation">
+                              <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                    <li class="nav-item">
+                                          <a class="nav-link active" aria-current="page"
+                                                href="/quienes_somos.html">Quienes
+                                                Somos</a>
+                                    </li>
+                                    <li class="nav-item dropdown">
+                                          <a class="nav-link dropdown-toggle" href="#" role="button"
+                                                data-bs-toggle="dropdown" aria-expanded="false">
+                                                Niveles
+                                          </a>
+                                          <ul class="dropdown-menu">
+                                                <li><a class="dropdown-item" href="#nivelBasico">Basico</a></li>
+                                                <li><a class="dropdown-item" href="#nivelInter">Intermedio</a></li>
+                                                <li><a class="dropdown-item" href="#nivelAvan">Avanzado</a></li>
+                                          </ul>
+                                    </li>
+                                    <li class="nav-item">
+                                          <a class="nav-link" href="/contacto.html">Contactanos</a>
+                                    </li>
+                              </ul>
+                              <form class="d-flex">
+                                    <input class="form-control me-2" type="search" placeholder="Buscar"
+                                          aria-label="Search">
+                                    <button class="btn btn nav" type="submit"><i
+                                                class="fa-solid fa-magnifying-glass"></i></button>
+                              </form>
+                              <button class="btn btn nav" type="button"><a href="/login.html" class="btn btn nav"
+                                          target="_blank"> Acceso<br> Campus</a></button>
+                        </div>
+                  </div>
+            </nav>
+      </header>
+
+      <section class="inicio">
+            <div class="container text-center">
+                  <div class="row">
+                        <div class="col-md-6 col-sm-4" id="text-inicio">
+                              <h1>Inscripciones Abiertas 2023!!</h1>
+                              <p>Estás a tiempo de inscribirte a los Cursos del Ciclo 2023! Nuestros cursos se adaptan
+                                    siempre a tus necesidades: podés inscribirte a la totalidad del curso o sólo a la
+                                    parte que necesites reforzar y más dificultades te da.</p>
+                              <img src="/assets/img/check.gif" width="50" alt="check">
+                              <button class="btnRegistro"><a href="/form.html" class="btnRegistro">INSCRIPCION
+                                    </a></button>
+                        </div>
+                        <div class="col-md-6 col-sm-4">
+                              <!--carrucel inscripcion-->
+                              <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                                    <div class="carousel-indicators">
+                                          <button type="button" data-bs-target="#carouselExampleCaptions"
+                                                data-bs-slide-to="0" class="active" aria-current="true"
+                                                aria-label="Slide 1"></button>
+                                          <button type="button" data-bs-target="#carouselExampleCaptions"
+                                                data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                          <button type="button" data-bs-target="#carouselExampleCaptions"
+                                                data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                    </div>
+                                    <div class="carousel-inner">
+                                          <div class="carousel-item active">
+                                                <img src="/assets/img/2carrucel.png" class="d-block w-100"
+                                                      alt="ingles academia">
+                                                <div class="carousel-caption d-md-block">
+                                                      <h5>Aprende inglés más rápido y más fácil este 2023</h5>
+                                                      <p>Clases en directo ILIMITADAS
+                                                            las 24 horas del día
+                                                      </p>
+                                                </div>
+                                          </div>
+                                          <div class="carousel-item">
+                                                <img src="/assets/img/4carrucel.png" class="d-block w-100"
+                                                      alt="ingles academia">
+                                                <div class="carousel-caption d-md-block">
+                                                      <h5>¿Por qué nuestro curso?</h5>
+                                                      <p>Tiene herramienta que
+                                                            perfecciona tu pronunciación
+                                                      </p>
+                                                </div>
+                                          </div>
+                                          <div class="carousel-item">
+                                                <img src="/assets/img/5carrucel.png" class="d-block w-100"
+                                                      alt="ingles academia">
+                                                <div class="carousel-caption d-md-block">
+                                                      <h5>Seguimiento a tu progreso</h5>
+                                                      <p>Te acompañamos de manera personalizada a través de WhatsApp,
+                                                            para estar conectados contigo durante tu proceso.
+                                                      </p>
+                                                </div>
+                                          </div>
+                                    </div>
+                                    <button class="carousel-control-prev" type="button"
+                                          data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                          <span class="visually-hidden">Previous</span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button"
+                                          data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                          <span class="visually-hidden">Next</span>
+                                    </button>
+                              </div>
+                        </div>
+                  </div>
+            </div>
+      </section>
+      <section class="slogans">
+            <h3>Animate a dar el paso que te acerque a alcanzar tus sueños, a esa meta
+                  profesional
+                  deseada o ese viaje tan esperado.</h3>
+      </section>
+      <!-- QUIENES SOMOS-->
+      <section class="quienes">
+            <div class="row">
+                  <div class="col-1"></div>
+                  <div class="col-8">
+                        <CENTER class="quienes">
+                              <h5>ANIMATE A DESCUBRIR MAS SOBRE NOSOTROS</h5> <br>
+                              <a href="quienes_somos.html" class="btnRegistro">¿Quienes somos?</a>
+                        </CENTER>
+                  </div>
+                  <!--publicidad-->
+                  <div class="col-3">
+                        <aside>
+                              <center>
+                                    <p>Espacio publicitario</p>
+                              </center>
+                              <div id="carouselExampleControlsNoTouching" class="carousel slide" data-bs-touch="false">
+                                    <div class="carousel-inner">
+                                          <div class="carousel-item active">
+                                                <a href="https://www.aruba.com/es" title="publicidad" target="_blank">
+                                                      <img src="/assets/img/2publicidad.jpg" class="d-block w-100"
+                                                            alt="publicidad"> </a>
+                                          </div>
+                                          <div class="carousel-item">
+                                                <a href="https://www.aruba.com/es" title="publicidad" target="_blank">
+                                                      <img src="/assets/img/publicidad.jpg" class="d-block w-100"
+                                                            alt="publicidad"> </a>
+                                          </div>
+                                          <div class="carousel-item">
+                                                <a href="https://www.aruba.com/es" title="publicidad" target="_blank">
+                                                      <img src="/assets/img/3publicidad.png" class="d-block w-100"
+                                                            alt="publicidad"> </a>
+                                          </div>
+                                    </div>
+                                    <button class="carousel-control-prev" type="button"
+                                          data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="prev">
+                                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                          <span class="visually-hidden">Previous</span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button"
+                                          data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="next">
+                                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                          <span class="visually-hidden">Next</span>
+                                    </button>
+                              </div>
+                        </aside>
+                  </div>
+            </div>
+      </section>
+      <!--profesores-->
+      <section class="profesores">
+            <h4 class="profesores">¡Conoce a los profesores!</h4>
+            <div class="container">
+                  <div class="row">
+                        <div class="col-md-4 col-sm-3">
+                              <div class="wrap">
+                                    <div class="tarjeta-wrap">
+                                          <div class="tarjeta">
+                                                <div class="adelante card1">
+                                                      <img src="/assets/img/docente2.png" width="300px" height="350px"
+                                                            alt="Martha Fredy">
+                                                </div>
+                                                <div class="atras">
+                                                      <p>Ingles Americano
+                                                            <strong>Dictado por Martha</strong>
+                                                            El más conocido y, por tanto, el más utilizado. Esto se debe
+                                                            principalmente a la industria del entretenimiento
+                                                      </p>
+                                                </div>
+                                          </div>
+                                    </div>
+                              </div>
+                        </div>
+                        <div class="col-md-4 col-sm-3">
+                              <div class="wrap">
+                                    <div class="tarjeta-wrap">
+                                          <div class="tarjeta">
+                                                <div class="adelante card2">
+                                                      <img src="/assets/img/docente4.png" width="300px" height="350px"
+                                                            alt="Pedro Marti">
+                                                </div>
+                                                <div class="atras">
+                                                      <p>Ingles Británico
+                                                            <strong>Dictado por Alexander S.</strong>
+                                                            Deriva del anglosajón, llamado también “inglés
+                                                            viejo”.
+                                                            También presenta sus variaciones internas.
+                                                      </p>
+                                                </div>
+                                          </div>
+                                    </div>
+                              </div>
+                        </div>
+                        <div class="col-md-4 col-sm-3">
+                              <div class="wrap">
+                                    <div class="tarjeta-wrap">
+                                          <div class="tarjeta">
+                                                <div class="adelante card3">
+                                                      <img src="/assets/img/docente3.png" alt="inglescanadience"
+                                                            width="300px" height="350px">
+                                                </div>
+                                                <div class="atras">
+                                                      <p>Ingles Canadiense
+                                                            <strong>Dictado por Martin J.</strong>Canadiense
+                                                            La variedad que se habla en Canadá es una mezcla de
+                                                            elementos idiomáticos del americano y del británico
+                                                      </p>
+                                                </div>
+                                          </div>
+                                    </div>
+                              </div>
+                        </div>
+                  </div>
+            </div>
+
+      </section>
+      <!-- servicios-->
+      <section class="servicios">
+            <div class="row">
+                  <div class="container">
+                        <h3 class="servicios">¿Que te ofrecemos?</h3>
+                        <div class="row">
+                              <div class="col-md-4 col-sm-3">
+                                    <div class="card">
+                                          <img src="/assets/img/nivelacion.png">
+                                          <div class="contenido">
+                                                <h3>Nivelación</h3>
+                                                <p>Evaluamos tus habilidades para conocer tu nivel de inglés, de
+                                                      modo que
+                                                      puedas sumarte al curso más adecuado según tus conocimientos
+                                                      previos.
+                                                </p>
+                                                <a href="/contacto.html">Consultanos! </a>
+                                                <!--reedireccionar a contacto-->
+                                          </div>
+                                    </div>
+                              </div>
+                              <div class="col-md-4 col-sm-3">
+                                    <div class="card">
+                                          <img src="/assets/img/aprendizaje.png">
+                                          <div class="contenido">
+                                                <h3>Aprendizaje</h3>
+                                                <p>Adaptamos nuestros cursos de manera on line y asincrónica
+                                                      entendiendo las
+                                                      necesidades
+                                                      de
+                                                      nuestros alumnos.</p>
+                                                <a href=#headingTwo>Leer mas! </a>
+                                                <!--reedireccionar a FAQ-->
+                                          </div>
+                                    </div>
+                              </div>
+                              <div class="col-md-4 col-sm-3">
+                                    <div class="card">
+                                          <img src="/assets/img/certificacion.png">
+                                          <div class="contenido">
+                                                <h3>Certificado</h3>
+                                                <p>Título oficial, terciario, con validez nacional, avalado por la
+                                                      UNC.</p>
+                                                <a href=#headingTwo>Leer mas! </a>
+                                                <!--reedireccionar a FAQ-->
+                                          </div>
+                                    </div>
+                              </div>
+                        </div>
+                  </div>
+      </section>
+      <!--Niveles-->
+      <section class="niveles">
+            <div class="container">
+                  <h3 class="niveles">Encontra tu nivel ideal</h3>
+                  <div class="row">
+                        <div class="col-md-4 col-sm-3">
+                              <div class="card">
+                                    <img src="/assets/img/nivel3.jpg">
+                                    <div class="contenido">
+                                          <h3 id="nivelBasico">Nivel Básico</h3>
+                                          <p>Comenzá desde cero con tu aprendizaje,para ir avanzando en el contenido
+                                                propuesto
+                                                y
+                                                poco a
+                                                poco comezar a escribir y hablar el idioma.
+                                          </p>
+                                    </div>
+                              </div>
+                        </div>
+                        <div class="col-md-4 col-sm-3">
+                              <div class="card">
+                                    <img src="/assets/img/nivel2.jpg">
+                                    <div class="contenido">
+                                          <h3 id="nivelInter">Nivel Intermedio</h3>
+                                          <p>Cursos regulares,que están diseñados para ayudarte a practicar inglés y
+                                                seguir
+                                                sumando
+                                                conocimientos,partiendo desde una base requerida.
+                                          </p>
+                                    </div>
+                              </div>
+                        </div>
+                        <div class="col-md-4 col-sm-3">
+                              <div class="card">
+                                    <img src="/assets/img/nivel1.jpg">
+                                    <div class="contenido">
+                                          <h3 id="nivelAvan">Nivel Avanzado</h3>
+                                          <p>Cursos intensivos, para ayudarte a practicar inglés avanzando más
+                                                rápido,logrando un
+                                                nivel alto en corto tiempo de produccion oral/escrita y escucha activa.
+                                          </p>
+                                    </div>
+                              </div>
+                        </div>
+                  </div>
+            </div> <br> <br>
+      </section>
+      <!--Mision/Vision-->
+      <section class="mvv">
+
+            <div class="container">
+                  <h5 class="misvisval">MISION - VISION - VALOR</h5>
+                  <div class="row" id="mision">
+                        <div class="col-md-3 col-sm-12">
+                              <img src="/assets/img/mision.png" alt="Mision" class="imgmvv">
+                        </div>
+                        <div class="col-md-8 col-sm-10">
+                              <p>Nuestra <strong>Misión</strong> principal es la enseñanza del idioma inglés a
+                                    niños,
+                                    jóvenes y adultos, y también brindar información sobre los servicios
+                                    necesarios para
+                                    el intercambio cultural con los distintos paises de habla inglesa.</p>
+                        </div>
+                  </div>
+                  <div class="row" id="vision">
+                        <div class="col-md-8 col-sm-10">
+                              <p>Tenemos la <strong>Visón</strong> y creemos firmemente que la educación de
+                                    calidad al
+                                    alcance del mayor número posible de personas de todas las edades, es necesaria
+                                    para
+                                    la convivencia internacional, el desarrollo comunitario, la realización y
+                                    expresión
+                                    personal y el mejoramiento de las relaciones entre los países del mundo.</p>
+                        </div>
+                        <div class="col-sm-12 col-md-3">
+                              <img src="/assets/img/vision.png" alt="Vision" class="imgmvv">
+                        </div>
+                  </div>
+                  <div class="row" id="valor">
+                        <div class="col-sm-12 col-md-3">
+                              <img src="/assets/img/valor.png" alt="Valor" class="imgmvv">
+                        </div>
+                        <div class="col-sm-10 col-md-8">
+                              <p>Nuestros <strong>Valores :</strong> Excelencia y calidad en nuetros servicios,
+                                    eficiencia, innovación, pasión por lo que hacemos, compromiso con nuestros
+                                    alumnos,
+                                    responsabilidad, transparencia.</p>
+                        </div>
+                  </div>
+            </div>
+
+      </section>
+      <!--DUDAS-->
+      <section class="dudas">
+            <div class="container">
+                  <h3 class="dudas">FAQ ¿Dudas? ¡Acláralas con nuestras
+                        preguntas frecuentes!</h3>
+                  <div class="accordion" id="accordionExample">
+                        <div class="accordion-item">
+                              <h2 class="accordion-header" id="headingOne">
+                                    <button class="btn btn-light" type="button" data-bs-toggle="collapse"
+                                          data-bs-target="#collapseOne" aria-expanded="true"
+                                          aria-controls="collapseOne">
+                                          <strong class="faq">¿Tienen cursos para niños? ¿A partir de que edad se pueden
+                                                anotar?</strong>
+                                    </button>
+                              </h2>
+                              <div id="collapseOne" class="accordion-collapse collapse show"
+                                    aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                          Cursos a partir de los 7 años, nuestro método de enseñanza para niños utiliza
+                                          el juego como uno de los recursos para acompañar la enseñanza del idioma, por
+                                          los beneficios que éste aporta al desarrollo del aprendizaje.
+                                    </div>
+                              </div>
+                        </div>
+                        <div class="accordion-item">
+                              <h2 class="accordion-header" id="headingTwo">
+                                    <button class="btn btn-light" type="button" data-bs-toggle="collapse"
+                                          data-bs-target="#collapseTwo" aria-expanded="false"
+                                          aria-controls="collapseTwo">
+                                          <strong class="faq">¿Aprendizaje?</strong>
+                                    </button>
+                              </h2>
+                              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                          Modalidad asincrónica, completamente a distancia, para que puedas manejarte
+                                          libremente en tus tiempos y horarios disponibles. Consultas disponibles con
+                                          nuestros tutores desde las 8h am. hasta las 22pm.
+                                    </div>
+                              </div>
+                        </div>
+                        <div class="accordion-item">
+                              <h2 class="accordion-header" id="headingThree">
+                                    <button class="btn btn-light" type="button" data-bs-toggle="collapse"
+                                          data-bs-target="#collapseThree" aria-expanded="false"
+                                          aria-controls="collapseThree">
+                                          <strong class="faq">¿Certificado?</strong>
+                                    </button>
+                              </h2>
+                              <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                          Podrás utilizar tu certificado a nivel provincial y nacional y validarlo para
+                                          hacer traducciones y proyectos de manera profesional.
+                                    </div>
+                              </div>
+                        </div>
+                  </div>
+            </div>
+
+      </section>
+
+
+
+
+      <!-- JavaScript  pag de BOOSTRAP -->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+            crossorigin="anonymous"></script>
+
+</body>
+<footer>
+      <div class="container">
+            <div class="row">
+                  <div class="col">
+                        <h6 class="footer">CONTACTANOS</h6>
+                        <ul class="footer">
+                              <li><a href="https://goo.gl/maps/znBvG6TRoXPQRDNx9" class="redes" target="_blank"><i
+                                                class="fa-solid fa-map-pin"></i>
+                                          Av. 9 de Julio</a></li>
+                              <li><i class="fa-solid fa-phone-volume"></i>
+                                    (0351) 4527030</li>
+                              <li><a href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCJvrcCkmljTqBXwPrvRnrnqtqnBcGQvwbWKFXVXRTZXnLwNfXDNDSvQxjCRVhKzbsMCxmQq"
+                                          class="redes" target="_blank"><i class="fa-solid fa-envelope"></i>
+                                          academy@academy.org</a></li>
+                        </ul>
+                  </div>
+                  <div class="col">
+                        <h6 class="footer"><i class="fa-solid fa-arrow-down"></i> VISITANOS</h6>
+                        <iframe
+                              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.016887893333!2d-58.383764449772826!3d-34.60373446490896!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4aa9f0a6da5edb%3A0x11bead4e234e558b!2sObelisco!5e0!3m2!1ses-419!2sar!4v1665658332210!5m2!1ses-419!2sar"
+                              width="180" height="100" style="border:0;" allowfullscreen="" loading="lazy"
+                              referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                  </div>
+                  <div class="col">
+                        <h6 class="footer">EN NUETRAS REDES</h6>
+                        <ul class="footer">
+                              <li><a href="https://www.instagram.com/" class="redes" target="_blank"> Instagram <i
+                                                class="fa-brands fa-instagram"></i></a></li>
+                              <li><a href="https://www.facebook.com/" class="redes" target="_blank"> Facebook <i
+                                                class="fa-brands fa-facebook"></i></a></li>
+                              <li><a href="https://www.linkedin.com/" class="redes" target="_blank"> Linkedin <i
+                                                class="fa-brands fa-linkedin"></i></a></li>
+                        </ul>
+                  </div>
+            </div>
+      </div>
+      <div row class="copy"><i class="fa-sharp fa-solid fa-copyright"> </i><a href=https://developerit.tech
+                  id="creador"> DeveloperIT.tech</a>
+
+      </div>
+</footer>
+
+</html>
