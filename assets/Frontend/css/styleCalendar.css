@@ -1,0 +1,162 @@
+:root{
+      --primary:  #CFB6A2;
+      --secondary: #784B15;
+      --light: #F7E1CE;
+      --dark:  #000000;
+      --diabled:  #432919;
+      --publish: #E8692A;
+}
+.navcalendar{
+      color: var(--light);
+      background-color: var(--primary);
+}
+  .list-group.list-group-horizontal{
+      list-style-type: none;  
+   
+  }
+.icononav{
+      margin-inline-start: 20px;
+      color: var(--diabled);
+}
+.icononav:hover{
+ transform:scaleY(2) scaleX(2);
+ color: var(--publish);
+}
+.titulocal{
+      margin-top: 3%;
+      font-family:"prata";
+      color: var(--diabled);
+
+}
+.calendariog{
+      margin-top: 3%;
+ 
+}
+.container.notas{
+      background-color: var(--light);
+      margin-top: 5%;
+      margin-bottom: 5%;
+      padding-top: 5%;
+      padding-bottom: 5%;
+}
+
+body{
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      margin: auto;
+      height: 100vh;
+    
+}
+*:first-letter{
+      text-transform: capitalize;
+}
+
+.rouderBoder{
+      border-radius: 5px;
+}
+
+.list{
+      margin: 25px auto;
+      padding: 25px;
+      background-color: var(--light);
+      width: 100%;
+      max-width: 350px;
+}
+.date{
+      display: flexbox;
+      align-items: center;
+      justify-content: space-between;
+}
+.dateRight{
+      display:flex;
+      align-items: center;
+}
+#dateNumber{
+      font-size: 50px;
+       font-weight: bold;
+}
+#dateText{
+      letter-spacing: 3px;
+      text-transform: uppercase; /*dias en mayuscula*/
+}
+#dateMonth, #dateText {
+      font-weight: bold;
+}
+#dateMonth, #dateYear{
+      margin-left: 7px;
+      font-size: 20px;
+}
+form{
+      margin: 20px 0;
+      display: grid;
+      grid-auto-flow: column;
+      grid-template-columns: auto 35px auto;
+      grid-column-gap: 15px;
+}
+input{
+      border:none;
+      padding-left: 10px;
+      background-color: var(--secondary);
+}
+input:focus{
+      outline: none;
+}
+
+.orderButton{
+      border: none;
+      border-radius: 10px;
+      font-weight: bold;
+      cursor: pointer;
+      background-color: var(--secondary);
+      color: var(--light);
+   
+}
+.addTaskButton{
+      border: none;
+      font-weight: bold;
+      cursor: pointer;
+      height: 35px;
+      border-radius: 50%;
+      font-size: 18px;
+      background-color: var(--diabled);
+}
+.task{
+      background-color: var(--primary);
+      padding: 15px;
+      margin-top: 15px;
+      color:white;
+      cursor: pointer;
+      border-radius: 10px;
+}
+.done{
+      background-color: var(--diabled);
+      text-decoration: line-through;
+      color: var(--dark);
+}
+
+footer, .footer{
+      margin-top: 10%;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px;
+    background-color: var(--primary);
+    color: var(--diabled);
+    list-style: none;
+    font-size: 12px;
+    text-indent: 18%;
+    line-height: 28px;   
+}
+.copy{
+      padding-top: 2%;
+      font-size: 12px;
+      text-align: center;
+      font-weight: lighter;
+     color: var(--secondary);
+}
+.redes{
+      text-decoration: none;
+      text-transform: none;
+      color:var(--diabled);
+}
+.redes:hover{
+      color: var(--publish);
+}
+      
