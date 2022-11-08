@@ -6,7 +6,7 @@
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-      <link rel="stylesheet" href="/assets/css/form.css">
+      <link rel="stylesheet" href="/assets/css/form-Contc.css">
       <!--iconos-->
       <script src="https://kit.fontawesome.com/eb3caab6e7.js" crossorigin="anonymous"></script>
       <!--css  pag de BOOSTRAP -->
@@ -46,9 +46,10 @@
                                                 Niveles
                                           </a>
                                           <ul class="dropdown-menu">
-                                                <li><a class="dropdown-item" href="#nivelBasico">Basico</a></li>
-                                                <li><a class="dropdown-item" href="#nivelInter">Intermedio</a></li>
-                                                <li><a class="dropdown-item" href="#nivelAvan">Avanzado</a></li>
+                                                <li><a class="dropdown-item" href="index.html">Basico</a></li>
+                                                <li><a class="dropdown-item" href="index.html">Intermedio</a></li>
+                                                <li><a class="dropdown-item" href="index.html ">Avanzado</a>
+                                                </li>
                                           </ul>
                                     </li>
                                     <li class="nav-item">
@@ -61,7 +62,9 @@
                                     <button class="btn btn nav" type="submit"><i
                                                 class="fa-solid fa-magnifying-glass"></i></button>
                               </form>
-                              <button class="btn btn nav" type="button">Acceso<br> Campus</button>
+                              <button class="btn btn nav" type="button"><a href="/login.html" class="btn btn nav"
+                                          target="_blank"> Acceso<br>
+                                          Campus</a></button>
                         </div>
                   </div>
             </nav>
@@ -69,9 +72,9 @@
 
       <div class="container">
             <div class="row">
-                  <div class="col-7 form">
-                        <h2 class="titulo">Formulario de Consulta</h2>
-                        <form action="/action_page.php">
+                  <div class="col-md-7 col-sm-12">
+                        <form class="form-conociste">
+                              <h2 class="titulo">Formulario de Consulta</h2>
                               <label for="fname">Nombre</label><br>
                               <input type="text" id="fname" name="fname" placeholder="Nombre" value=""><br>
                               <label for="lname">Apellido</label><br>
@@ -82,32 +85,27 @@
                               <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
                               <br>
                               <h2 class="titulo">¿ Cómo nos conociste ?</h2>
-                              <form>
-                                    <input type="radio" id="whatsapp" name="fav_language" value="">
-                                      <label for="">WhatsApp</label><br>
-                                    <input type="radio" id="linkedin" name="fav_language" value="">
-                                    <label for="javascript">LinkedIn</label><br>
-                                    <input type="radio" id="instagram" name="fav_language" value="">
-                                    <label for="javascript">Instagram</label><br>
-                                    <input type="radio" id="instagram" name="fav_language" value="">
-                                    <label for="javascript">Recomendados</label><br>
-                                    <input type="radio" id="instagram" name="fav_language" value="">
-                                    <label for="javascript">Publicidad</label><br>
-                                    <input type="radio" id="instagram" name="fav_language" value="">
-                                    <label for="javascript">Internet</label>
-                              </form>
+                              <input type="radio" id="whatsapp" name="fav_language" value="">
 
-
-
-                              <input type="submit" value="Enviar">
+                              <label for="">WhatsApp</label><br>
+                              <input type="radio" id="linkedin" name="fav_language" value="">
+                              <label for="javascript">LinkedIn</label><br>
+                              <input type="radio" id="instagram" name="fav_language" value="">
+                              <label for="javascript">Instagram</label><br>
+                              <input type="radio" id="instagram" name="fav_language" value="">
+                              <label for="javascript">Recomendados</label><br>
+                              <input type="radio" id="instagram" name="fav_language" value="">
+                              <label for="javascript">Publicidad</label><br>
+                              <input type="radio" id="instagram" name="fav_language" value="">
+                              <label for="javascript">Internet</label><br>
+                              <input type="submit" id="enviar" value="Enviar">
                         </form>
                         <br>
-                        <a href="index.html" class="btn">Volver</a>
-
+                        <a href="index.html" id="volver">Volver</a>
                   </div>
 
-                  <div class="col-4">
-                        <img src="/assets/img/form.png" alt="consulta" width="500">
+                  <div class="col-md-4 col-sm-4">
+                        <img src="/assets/img/form.png" alt="consulta" width="120%">
 
                   </div>
 
@@ -155,10 +153,11 @@
 
 
             </div>
-      </div>
-      <div row class="copy"><i class="fa-sharp fa-solid fa-copyright"></i>
-            English Academy S.A
-      </div>
+            <div row class="copy"><i class="fa-sharp fa-solid fa-copyright"> </i><a href=https://developerit.tech
+                        id="creador">
+                        DeveloperIT.tech</a>
+
+            </div>
 </footer>
 
 </html>

@@ -34,6 +34,7 @@
       text-align: center;
       color: var(--diabled);
       margin-bottom: 25px;
+
 }
 .btnRegistro{
       margin-top: 3%;
@@ -43,6 +44,7 @@
       text-decoration: none;
      border-radius: 15%;
      border-color: var(--primary);
+           border: none;
  }
  .btnRegistro:hover{
       color: var(--light);
@@ -245,12 +247,12 @@
 
 }
 
-footer, .footer{
+footer {
     font-family: Arial, Helvetica, sans-serif;
     padding: 10px;
     background-color: var(--primary);
     color: var(--diabled);
-    list-style: none;
+ 
     font-size: 12px;
     text-indent: 18%;
     line-height: 28px;   
@@ -264,9 +266,17 @@ footer, .footer{
       }
 .redes{
       text-decoration: none;
-      text-transform: none;
+   
       color:var(--diabled);
 }
 .redes:hover{
       color: var(--publish);
+}
+.footer {
+      list-style: none;
+}
+#creador{
+     text-decoration: none;
+     color:var(--diabled);
+    
 }

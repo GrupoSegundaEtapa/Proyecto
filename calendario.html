@@ -5,7 +5,7 @@
       <meta charset="UTF-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+      <link rel="stylesheet" href="../assets/css/stylecontenido.css">
       <link rel="stylesheet" href="/assets/css/styleCalendar.css">
       <script src="/assets/js/scrptcalendar.js" type="text/javascript" defer></script>
       <!--iconos-->
@@ -25,20 +25,52 @@
 
 <body>
       <header>
-            <nav class="navbar navcalendar">
+            <nav class="navbar navbar-expand-lg">
                   <div class="container-fluid">
-                        <a class="navbar-brand" href="/Proyecto/index.html"><img src="assets/img/logotransparente.png"
-                                    alt="Logo"></a>
-                        <ul class="list-group list-group-horizontal">
-                              <li class="icononav"><i class="fa-solid fa-user"></i></li>
-                              <li class="icononav"><a
-                                          href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCJvrcCkmljTqBXwPrvRnrnqtqnBcGQvwbWKFXVXRTZXnLwNfXDNDSvQxjCRVhKzbsMCxmQq"
-                                          target="_blank" class="icononav"><i class="fa-solid fa-envelope"></i></a></li>
-                              <li class="icononav"><i class="fa-solid fa-book"></i></li>
-                        </ul>
+                        <a href="index.html"> <img src="/assets/img/logotransparente.png" href="/index.html" alt="Logo">
+                        </a>
+
+                        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+
+                              <div class="dropdown">
+                                    <a class="btn btn-warning dropdown-toggle" href="#" role="button"
+                                          data-bs-toggle="dropdown" aria-expanded="false">
+                                          <i class="fa-solid fa-user"></i>
+                                    </a>
+
+                                    <ul class="dropdown-menu">
+                                          <li><a class="dropdown-item" href="#"><i class="fa-solid fa-pen"></i>Editar
+                                                      Perfil</a></li>
+                                          <li><a class="dropdown-item" href="#"><i
+                                                            class="fa-solid fa-book"></i>Certificados</a></li>
+                                          <li><a class="dropdown-item" href="#"><i
+                                                            class="fa-solid fa-power-off"></i>Cerrar
+                                                      Sesion</a></li>
+                                    </ul>
+                              </div>
+
+                              <button class="btn btn nav" type="button"><a href="/foro.html" class="btn btn nav"
+                                          target="_blank"><i class="fa-solid fa-bell"></i>
+                                    </a></button>
+                              <button class="btn btn nav" type="button"><a href="https://discord.com/"
+                                          class="btn btn nav" target="_blank"><i class="fa-brands fa-discord"></i>
+                                    </a></button>
+
+                        </div>
                   </div>
             </nav>
       </header>
+
+      <!--Barra lateral-->
+      <div class="barra">
+            <h2>Menu de curso <img src="../assets/img/hamburgermenu.png" alt=""></h2>
+            <ul>
+                  <li> <a href="contenido.html"> inicio </a></li>
+                  <li> <a href="clasesgrabadas.html"> Clases grabadas </a></li>
+                  <li> <a href="/calendario.html">Calendario </a></li>
+                  <li> <a href="index.html"> Salir </a> </li>
+            </ul>
+      </div>
       <div class="container">
             <div class="row">
                   <div class="col-1 navLateral">
@@ -55,35 +87,7 @@
                               style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
                   </div>
             </div>
-            <div class="container notas">
-                  <center class="titulocal">
-                        <h4>Tome Notas aqui</h4>
-                        <h6>Enliste las tareas del dia, borre y reorganice las mismas</h6>
-                  </center>
-                  <div class="list roundBorder">
-                        <div class="date">
-                              <div class="dateRight">
-                                    <!--fechaderecha-->
-                                    <div id="dateNumber"></div>
-                                    <div>
-                                          <div id="dateMonth"></div>
-                                          <div id="dateYear"></div>
-                                    </div>
-                              </div>
-                              <div id="dateText"></div>
-                              <!--nombreDia-->
-                        </div>
-                        <form onsubmit="addNewTask(event)">
-                              <!--formulario desp del dia-->
-                              <input type="text" name="taskText" autocomplete="off" placeholder="nueva tarea"
-                                    class="roundBorder">
-                              <button type="submit" class="addTaskButton">+</button>
-                              <button type="button" class="orderButton roundBorder"
-                                    onclick="renderOrderedTasks()">Ordenar</button>
-                        </form>
-                        <div id="tasksContainer"></div>
-                  </div>
-            </div>
+
       </div>
 </body>
 <footer>
@@ -123,8 +127,10 @@
                   </div>
             </div>
       </div>
-      <div row class="copy"><i class="fa-sharp fa-solid fa-copyright"></i>
-            English Academy S.A
+      <div row class="copy"><i class="fa-sharp fa-solid fa-copyright"> </i><a href=https://developerit.tech
+                  id="creador"></a>
+            DeveloperIT.tech</a>
+
       </div>
 </footer>
 
