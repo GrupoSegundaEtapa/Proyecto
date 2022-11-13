@@ -40,7 +40,7 @@
                 <!--Formulario de Login y registro-->
                 <div class="contenedor__login-register">
                     <!--Login-->
-                    <form action="val_register.php" class="formulario__login">
+                    <form action="assets/py/registro.py" method="POST" class="formulario__login">
                         <h2>Crea una cuenta</h2>
                         <div class="g-signin2" data-onsuccess="onSignIn"></div>
                         <div class="data">
@@ -50,6 +50,7 @@
                         <input type="password" name="password" placeholder="Contraseña" required>
                         <input type="password" name="password2" placeholder="Repetir Contraseña" required>
                         <input type="submit" class="btnEntrar" value="Crear" > <br>
+                        <br><br>
                       <center>  <a href="register.html" class="">Tengo una cuenta</a></center> 
                     </form>
 
