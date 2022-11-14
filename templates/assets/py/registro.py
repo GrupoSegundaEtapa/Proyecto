@@ -1,50 +1,12 @@
 #!C:\Python27\python.exe
 import mysql.connector
 import cgi
-print("Content-type: text/html\n\n")
+print "Content-type: text/html\n\n";
 form = cgi.FieldStorage()
 
-user = form.getvalue('user')
-email = form.getvalue('email')
-passw = form.getvalue('password')
+user = form.getvalue("user")
 
-try:
- connection = mysql.connector.connect(host='localhost',
- database='academia',
- user='root',
- password='')
- mySql_insert_query = """INSERT INTO usuarios ( nombre_user, email_user, pass_user)
- VALUES (%s, %s, %s, %s) """
- records_to_insert = [( user, email, passw)]
- cursor = connection.cursor()
- cursor.executemany(mySql_insert_query, records_to_insert)
- connection.commit()
- print(cursor.rowcount, "Record inserted successfully into products table")
-except mysql.connector.Error as error:
- print("Failed to insert record into MySQL table {}".format(error))
-finally:
- if connection.is_connected():
-    cursor.close()
-    connection.close()
-    print("MySQL connection is closed")
-
-
-
-
-
-
-
-
-
-# #!C:\Python27\python.exe
-# import mysql.connector
-# import cgi
-# print "Content-type: text/html\n\n";
-# form = cgi.FieldStorage()
-
-# user = form.getvalue("user")
-
-# print(user)
+print(user)
 
 # try:
 #     conexion = mysql.connector.connect(host='localhost', database='academia', user='root', password='')

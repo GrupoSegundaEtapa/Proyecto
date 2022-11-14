@@ -2,10 +2,10 @@
 -- version 5.2.0
 -- https://www.phpmyadmin.net/
 --
--- Servidor: 127.0.0.1
--- Tiempo de generación: 18-10-2022 a las 16:43:16
--- Versión del servidor: 10.4.25-MariaDB
--- Versión de PHP: 8.1.10
+-- Servidor: 127.0.0.1:3308
+-- Tiempo de generación: 13-11-2022 a las 19:47:23
+-- Versión del servidor: 10.4.24-MariaDB
+-- Versión de PHP: 7.4.29
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -37,10 +37,25 @@ CREATE TABLE `clases` (
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `estudiantes`
+-- Estructura de tabla para la tabla `contacto`
 --
 
-CREATE TABLE `estudiantes` (
+CREATE TABLE `contacto` (
+  `id_Dni` int(99) NOT NULL,
+  `nombre_cons` varchar(99) NOT NULL,
+  `apellido_cons` varchar(99) NOT NULL,
+  `constulta` varchar(300) NOT NULL,
+  `conocio_por` multipoint NOT NULL,
+  `mail_cons` varchar(100) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `usuario`
+--
+
+CREATE TABLE `usuario` (
   `nombre_est` varchar(99) NOT NULL,
   `apellido_est` varchar(99) NOT NULL,
   `telefono_est` varchar(99) NOT NULL,
@@ -51,15 +66,16 @@ CREATE TABLE `estudiantes` (
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `usuarios`
+-- Estructura de tabla para la tabla `usuario_edit`
 --
 
-CREATE TABLE `usuarios` (
+CREATE TABLE `usuario_edit` (
   `id_user` int(11) NOT NULL,
   `nombre_user` varchar(20) NOT NULL,
   `email_user` varchar(99) NOT NULL,
   `pass_user` varchar(99) NOT NULL,
-  `permiso_user` int(1) NOT NULL
+  `permiso_user` int(1) NOT NULL,
+  `foto` bit(64) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
@@ -73,9 +89,15 @@ ALTER TABLE `clases`
   ADD PRIMARY KEY (`id_clase`);
 
 --
--- Indices de la tabla `usuarios`
+-- Indices de la tabla `contacto`
 --
-ALTER TABLE `usuarios`
+ALTER TABLE `contacto`
+  ADD PRIMARY KEY (`id_Dni`);
+
+--
+-- Indices de la tabla `usuario_edit`
+--
+ALTER TABLE `usuario_edit`
   ADD PRIMARY KEY (`id_user`);
 
 --
@@ -89,9 +111,9 @@ ALTER TABLE `clases`
   MODIFY `id_clase` int(11) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT de la tabla `usuarios`
+-- AUTO_INCREMENT de la tabla `usuario_edit`
 --
-ALTER TABLE `usuarios`
+ALTER TABLE `usuario_edit`
   MODIFY `id_user` int(11) NOT NULL AUTO_INCREMENT;
 COMMIT;
 
