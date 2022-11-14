@@ -1,0 +1,25 @@
+
+            p.normal {
+                  font-style: normal;
+            }
+
+            p.italic {
+                  font-style: italic;
+            }
+
+            p.oblique {
+                  font-style: oblique;
+            }
+
+            #texto {
+                  text-align: justify;
+                  font-size: 2em;
+
+            }
+
+            #encabezado {
+                  font-size: 2.5em;
+                  text-align: center;
+                  font-weight: bold;
+            }
+  
