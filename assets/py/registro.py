@@ -1,6 +1,8 @@
 #!C:\Python27\python.exe
-import mysql.connector
 import cgi
+
+import mysql.connector
+
 print("Content-type: text/html\n\n")
 form = cgi.FieldStorage()
 
